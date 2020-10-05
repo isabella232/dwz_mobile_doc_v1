@@ -29,9 +29,9 @@ npm run serve
 
 ![](_media/readme/1.png)
 
-安装完成后重启IDE， 再次编辑`markdown`文件时，截图后直接在md文件中粘贴 会弹出如下弹窗：
+安装完成后重启IDE， 再次编辑`markdown`文件时，截图后直接在md文件中粘贴,会弹出如下弹窗：
 
-![](_media/ea320869.png)
+![](./_media/readme/835d736c.png)
 
 理论上只需要修改目录即可， 文件名都是随机值，最终文件上传生成8位随机多件名+后缀png
 
@@ -40,9 +40,9 @@ npm run serve
 - 原生部署（类似启动，然后使用Nginx代理即可）
 - Gitee Pages
 
-![](_media/a52347d9.png)
+![](./_media/readme/985433d5.png)
 
-![](_media/82e714e3.png)    
+![](./_media/readme/bcd957f1.png)
 
 上图两个地方使用默认配置即可
 
