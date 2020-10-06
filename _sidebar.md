@@ -4,6 +4,7 @@
   - [HTML规范](doc/h5/specification/HTML.md)
   - [CSS规范](doc/h5/specification/CSS.md)
   - [组件设计](doc/h5/widget/widget.md)
+  - [DWZ Mobile前端手册](doc/h5/dwz_manual.md)
  
 - APICloud 打包iOS & Android
   - [apicloud云打包](doc/apicloud/package.md)
