@@ -1,5 +1,5 @@
 
-### 3D案例
+### 3D案例(视频展示)
 
 > 写实风格(点击播放)
 
@@ -28,7 +28,7 @@
 <iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIyMzE0NA==' frameborder=0 'allowfullscreen'></iframe>
 -->
 
-### 大屏可视化图表
+### 大屏可视化图表(视频展示)
 
 > 环形图表(点击播放)
 
@@ -49,7 +49,7 @@
 </video>
 
 
-### 软硬件一体案例
+### 软硬件一体案例(视频展示)
 
 > 预约外币(点击播放)
 
