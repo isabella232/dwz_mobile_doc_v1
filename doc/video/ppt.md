@@ -3,21 +3,25 @@
 
 > 写实风格(点击播放)
 
-<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/sijiqing.jpg">
+<!--<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/sijiqing.jpg">
     <source src="http://www.7788sc.com/ui/z/video/3D/sijiqing.mp4" type="video/mp4">
-</video>
+</video>-->
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIxNzEzMg==' frameborder=0 'allowfullscreen'></iframe>
 
 > 科技风格 + 地图(点击播放)
 
-<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/dwz-threejs-amap.jpg">
+<!--<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/dwz-threejs-amap.jpg">
     <source src="http://www.7788sc.com/ui/z/video/3D/dwz-threejs-amap.mp4" type="video/mp4">
-</video>
+</video>-->
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIyNzA5Mg==' frameborder=0 'allowfullscreen'></iframe>
+
 
 > 银行大屏3D案例(点击播放)
 
-<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/sz-icbc-bank.jpg">
+<!--<video width="100%" controls preload="none" poster="http://www.7788sc.com/ui/z/video/3D/sz-icbc-bank.jpg">
     <source src="http://www.7788sc.com/ui/z/video/3D/sz-icbc-bank.mp4" type="video/mp4">
-</video>
+</video>-->
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIyMzE0NA==' frameborder=0 'allowfullscreen'></iframe>
 
 ### 大屏可视化图表
 
