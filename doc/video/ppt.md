@@ -1,34 +1,51 @@
 
-### 3D案例(视频展示)
+## 3D沙盘案例
 
-> 写实风格(点击播放)
+> ### [真实感3D沙盘](http://www.7788sc.com/ui/z/dwz_three/dwz-three.html)
 
+- 特点：模型和景观无限接近真实
+- 分类：白天/夜景
+- [demo在线演示](http://www.7788sc.com/ui/z/dwz_three/dwz-three.html)
+- 视频展示(点击播放) 
 <video width="100%" controls preload="none" poster="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/sijiqing.jpg">
     <source src="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/sijiqing.mp4" type="video/mp4">
 </video>
-<!--
-<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIxNzEzMg==' frameborder=0 'allowfullscreen'></iframe>
--->
 
-> 科技风格 + 地图(点击播放)
+> ### [科技感3D沙盘](http://www.7788sc.com/ui/z/dwz_three/dwz-three-amap.html)
 
+- 特点：相对真实感模型减化面数更少，没有景观，更多的动画和发光效果
+- 分类：高德地图2.0 + ThreeJS/纯ThreeJS；根据不同的业务场景决定是否使用地图
+- 3D动画效果
+    - 模型发光、流光
+    - 交通飞线
+    - 护栏发光
+    - 雷达扫光
+    - 光柱
+    - 光环
+    - 半球护罩
+    - 地面扩散方格
+    - 棱锥体
+    - 光柱
+- [demo在线演示](http://www.7788sc.com/ui/z/dwz_three/dwz-three-amap.html)
+- 视频展示(点击播放)
 <video width="100%" controls preload="none" poster="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/dwz-threejs-amap.jpg">
     <source src="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/dwz-threejs-amap.mp4" type="video/mp4">
 </video>
-<!--
-<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIyNzA5Mg==' frameborder=0 'allowfullscreen'></iframe>
--->
 
-> 银行大屏3D案例(点击播放)
+> ### 银行大屏3D案例
 
+- 视频展示(点击播放)
 <video width="100%" controls preload="none" poster="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/sz-icbc-bank.jpg">
     <source src="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/sz-icbc-bank.mp4" type="video/mp4">
 </video>
-<!--
-<iframe height=498 width=510 src='https://player.youku.com/embed/XNDkzODIyMzE0NA==' frameborder=0 'allowfullscreen'></iframe>
--->
 
-### 大屏可视化图表(视频展示)
+## 大屏可视化图表
+
+> ### echarts图表适配
+常见大屏可视化图表可以直接echarts图表，但是大屏的分辨率各类太多需要对图表大小特别是文字字号大小做适配。
+
+> ### 自定义图表
+一部份特殊的图表echarts中没有，所以根据特定展示需要，封装了自定义图表
 
 > 环形图表(点击播放)
 
@@ -49,7 +66,7 @@
 </video>
 
 
-### 软硬件一体案例(视频展示)
+> ### 软硬件一体案例
 
 > 预约外币(点击播放)
 
