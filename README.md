@@ -1,7 +1,22 @@
 ## dwz_mobile_doc_v1
 
 > ### 介绍
+
 DWZ 移动端开发框架文档
+
+> ### 捐助
+
+如果您觉得我们的开源软件对你有所帮助，请扫下方二维码打赏我们一杯咖啡。
+
+|支付宝|微信|
+|:---:|:---:|
+|<img src="https://images.gitee.com/uploads/images/2020/1120/121245_a640f47a_548862.png" width="200">|<img src="https://images.gitee.com/uploads/images/2020/1120/121306_64784252_548862.png" width="200">|
+
+> ### 联系
+
+网站：http://jui.org
+DWZ官方微博：http://weibo.com/dwzui
+邮箱：z@j-ui.com
 
 > ### 快速使用
 
@@ -63,16 +78,4 @@ npm run serve
 5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
 6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
 
-> ### 捐助
 
-如果您觉得我们的开源软件对你有所帮助，请扫下方二维码打赏我们一杯咖啡。
-
-|支付宝|微信|
-|:---:|:---:|
-|<img src="https://images.gitee.com/uploads/images/2020/1120/121245_a640f47a_548862.png" width="200">|<img src="https://images.gitee.com/uploads/images/2020/1120/121306_64784252_548862.png" width="200">|
-
-> ### 联系
-
-网站：http://jui.org
-DWZ官方微博：http://weibo.com/dwzui
-邮箱：z@j-ui.com
