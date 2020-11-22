@@ -20,4 +20,6 @@
 
 - 其它
     - [Markdown手册](doc/other/markdown.md)
+    - [VS Code配制](doc/vscode/settings.md)
+    - [VS Code快捷键](doc/vscode/keyboard.md)
 
