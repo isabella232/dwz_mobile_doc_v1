@@ -82,3 +82,4 @@
 
 ## 更多参考
 - [VS Code 官方快捷键大全](https://code.visualstudio.com/docs/getstarted/keybindings)
+- [VS Code 常用快捷键与插件推荐](https://www.cnblogs.com/echolun/p/10872717.html)
