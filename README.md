@@ -10,13 +10,13 @@ DWZ 移动端开发框架文档
 
 |支付宝|微信|
 |:---:|:---:|
-|<img src="https://images.gitee.com/uploads/images/2020/1120/121245_a640f47a_548862.png" width="200">|<img src="https://images.gitee.com/uploads/images/2020/1120/121306_64784252_548862.png" width="200">|
+|<img src="https://jui.org/themes/default/images/zfb.png" width="200">|<img src="https://jui.org/themes/default/images/wx.png" width="200">|
 
 > ### 联系
 
-网站：http://jui.org
-DWZ官方微博：http://weibo.com/dwzui
-邮箱：z@j-ui.com
+- 网站：http://jui.org
+- DWZ官方微博：http://weibo.com/dwzui
+- 邮箱：z@j-ui.com
 
 > ### 快速使用
 
