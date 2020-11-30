@@ -13,7 +13,7 @@
 - NWJS 打包windows exe文件
   - [打包exe文件+修改文件图标](doc/nwjs/usage.md)
   - [自动打包部署exe文件脚本使用说明](doc/nwjs/package.md)
-    
+  
 <!--
 - [案例视频展示](doc/video/ppt.md)
 -->
@@ -22,4 +22,5 @@
     - [Markdown手册](doc/other/markdown.md)
     - [VS Code配制](doc/vscode/settings.md)
     - [VS Code快捷键](doc/vscode/keyboard.md)
+    - [关于docsify](doc/other/docsify.md)
 

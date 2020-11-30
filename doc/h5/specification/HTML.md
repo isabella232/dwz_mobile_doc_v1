@@ -56,12 +56,12 @@ HTML文本、CDATA、JavaScript、meta标签某些属性等内容可大小写混
 
 推荐：
 ```html
-<link rel="stylesheet" type="text/css" href="" >
-<script type="text/javascript" src="" ></script>
+<link rel="stylesheet" type="text/css" href="">
+<script type="text/javascript" src=""></script>
 ```
 不推荐：
 ```html
-<link rel="stylesheet" href="" >
+<link rel="stylesheet" href="">
 <script src=""></script>
 ```
 #### 元素属性
@@ -72,13 +72,13 @@ HTML文本、CDATA、JavaScript、meta标签某些属性等内容可大小写混
 推荐：
 ```html
 <input type="text">
-<input type="radio" name="name" checked="checked" >
+<input type="radio" name="name" checked="checked">
 ```
 不推荐：
 ```html
 <input type=text>	
 <input type='text'>
-<input type="radio" name="name" checked >
+<input type="radio" name="name" checked>
 ```
 #### 代码缩进
 
