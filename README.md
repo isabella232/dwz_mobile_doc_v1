@@ -4,8 +4,8 @@ DWZ 移动端开发框架文档
 
 **Require:**
 
-- node\^10.13.0
-- npm\^6.14.5
+- node\^10.13.0【https://nodejs.org/en/download/】
+- npm\^6.14.5【新版的nodejs已经集成了npm】
 
 > ### Quickstart
 
@@ -49,6 +49,14 @@ git clone https://gitee.com/dwzteam/dwz_mobile_app.git
     
     ![](./_media/readme/apicloud_3.png)
 
+> ### Demo 演示
+- 在线演示版，使用chrome 开发模型设置手机版，`http://mobile.jui.org`
+- 安卓Apk安装设置版 `http://mobile.jui.org/apk/dwz_mobile_dev.apk`
+- 视频演示 `http://mobile.jui.org/video/dwz_mobile.mp4`
+
+<video width="320" controls preload="none" poster="http://mobile.jui.org/video/dwz_mobile.png">
+    <source src="http://mobile.jui.org/video/dwz_mobile.mp4">
+</video>
 
 > ### 联系
 
