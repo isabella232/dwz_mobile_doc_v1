@@ -4,8 +4,8 @@ DWZ 移动端开发框架文档
 
 **Require:**
 
-- node\^10.13.0
-- npm\^6.14.5
+- node\^10.13.0【https://nodejs.org/en/download/】
+- npm\^6.14.5【新版的nodejs已经集成了npm】
 
 > ### Quickstart
 
