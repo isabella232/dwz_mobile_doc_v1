@@ -1,8 +1,9 @@
 ## DWZ Mobile 介绍
 
-DWZ 移动端HTML5混合APP开发框架
+- DWZ 手机版 HTML5 + 原生 混合开发框架。
+- 基于原生JS轻量级移动端开发框架，核心代码库dwz.core.js使用方式和jQuery 80%相似，针对移动端精简优化代码（核心库代码相当于jQuery的十分之一）。
 
-**设计思路**
+> ### 设计思路
 
 1. 灵活定制扩展方便：gulp构建工程，组件html结构、css（使用less）、javascript完全开放，可以实际项目要求灵活定制。
 2. 轻量级：封装精简版核心库dwz.core.js，相当于一个专门针对移动端优化的精简版jQuery，代码量只有jQuery 的十分之一左右，使用方式基本同jQuery。
