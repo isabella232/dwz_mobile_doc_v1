@@ -3,6 +3,8 @@
 - DWZ 手机版 HTML5 + 原生 混合开发框架。
 - 基于原生JS轻量级移动端开发框架，核心代码库dwz.core.js使用方式和jQuery 80%相似，针对移动端精简优化代码（核心库代码相当于jQuery的十分之一）。
 
+> ### [DWZ Mobile 详细文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1)
+
 > ### 设计思路
 
 1. 灵活定制扩展方便：gulp构建工程，组件html结构、css（使用less）、javascript完全开放，可以实际项目要求灵活定制。
