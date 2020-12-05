@@ -72,6 +72,7 @@
 - 放大或缩小(以编辑器左上角为基准):   `Ctrl +/-`
 - 侧边栏显示或隐藏： `Ctrl+B`
 - 全局搜索:   `Ctrl+Shift+F`
+- 全局搜索替换:   `Ctrl+Shift+H`
 - 显示 Debug:    Ctrl+Shift+D
 - 显示 Output:    Ctrl+Shift+U
 
