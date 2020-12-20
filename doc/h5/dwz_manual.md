@@ -1,156 +1,203 @@
-## DWZ Mobile前端手册
+> ## 事件处理
 
-### DWZ Mobile设计思路:
-1）简洁的html结构, 轻量级，扩展方便
-2）App设计思路: css, js, html页面模板放在移动端设备上, 启动App时初始化界面
-3）用封装轻量级移动端js库(dwz.core.js), 类似jQuery语法格式，降低学习门槛
-4）目标：简单实用，轻量级，扩展方便
+### 绑定事件并传参数
 
-### 事件处理
-
-> 绑定事件并传参数
 ```javascript
-$('body').on('touchstart', function(event){
+$("body").on(
+  "touchstart",
+  function (event) {
     console.log(event, event.data);
-}, {test1:'a1', test2:'b1'});
+  },
+  { test1: "a1", test2: "b1" }
+);
 ```
 
-> 自定义事件并传参数
+### 自定义事件并传参数
+
 ```javascript
-$('body').on('custom.event', function(event){
-    console.log(event, event.data);
+$("body").on("custom.event", function (event) {
+  console.log(event, event.data);
 });
-$('body').trigger('custom.event', {test1:'a1', test2:'b1'});
+$("body").trigger("custom.event", { test1: "a1", test2: "b1" });
 ```
 
-> 绑定多个事件, 解除绑定事件
+### 绑定多个事件, 解除绑定事件
+
 ```javascript
-$('body').on('touchstart', testFn, {test:123});
-$('body').on('touchstart', function(event){
+$("body").on("touchstart", testFn, { test: 123 });
+$("body").on(
+  "touchstart",
+  function (event) {
     console.log(event.data);
-    $('body').off('touchstart', testFn); // 解除指定的touchstart事件testFn
+    $("body").off("touchstart", testFn); // 解除指定的touchstart事件testFn
     // $('body').off('touchstart'); // 解除当前元素全部touchstart事件
-}, {test:124});
-function testFn(event){
-    console.log(event.data);
+  },
+  { test: 124 }
+);
+function testFn(event) {
+  console.log(event.data);
 }
 ```
 
-> 判断是否绑定事件 isBind() 方法
+### 判断是否绑定事件 isBind() 方法
+
 ```javascript
-$(document).on('touchstart touchmove', function (event) {
-    console.log(event.type);
+$(document).on("touchstart touchmove", function (event) {
+  console.log(event.type);
 });
-console.log($(document).isBind('touchstart'));
+console.log($(document).isBind("touchstart"));
 ```
 
-### 其它
+### 绑定事件传参数
 
-> dwz.eavl() 方法
 ```javascript
-function test1(){
-    alert(1);
+$("body").on(
+  $.event.hasTouch ? "touchstart" : "click",
+  function (event) {
+    console.log(this.data);
+    event.preventDefault();
+  },
+  { test1: "a", test2: "b" }
+);
+```
+
+### trigger 传参数
+
+```javascript
+$("body").on("custom.event", function (event) {
+  console.log(this.data);
+  event.preventDefault();
+});
+$("body").trigger("custom.event", { test1: "a1", test2: "b1" });
+```
+
+### 绑定多个事件, 空格分隔的多个事件名称
+
+```javascript
+$(document).on("touchstart touchmove", function (event) {
+  console.log(event.type);
+});
+```
+
+> ## 其它技巧
+
+### dwz.eavl() 方法
+
+```javascript
+function test1() {
+  alert(1);
 }
-var test2 = dwz.eavl('test1');
+const test2 = dwz.eavl("test1");
 test2();
 ```
 
-> navView, navTab 拦截器 dwz_interceptor
+### navView, navTab 拦截器 dwz_interceptor
+
 ```html
-<a data-href="my.html?dwz_interceptor=checkLogin" target="navView" rel="my">My</a>
+<a data-href="my.html?dwz_interceptor=checkLogin" target="navView" rel="my"
+  >My</a
+>
 ```
-> 或者定义dwz全局拦截函数
+
+### 或者定义 dwz 全局拦截函数
+
 ```javascript
-dwz.urlInterceptor = function(url){
-    // Todo
+dwz.urlInterceptor = function (url) {
+  // Todo
+};
+```
+
+### navView 回调 testAjaxSuccess
+
+```html
+<a
+  data-href="test.html?dwz_callback=testAjaxSuccess"
+  target="navView"
+  rel="test"
+  >test</a
+>
+```
+
+```javascript
+function testAjaxSuccess(html) {
+  var $box = $(this);
+  $box.html(html).initUI();
 }
 ```
 
-> navView 回调 testAjaxSuccess
+### navView 外部链接
+
 ```html
-<a data-href="test.html?dwz_callback=testAjaxSuccess" target="navView" rel="test">test</a>
-```
-```javascript
-function testAjaxSuccess(html){
-    var $box = $(this);
-    $box.html(html).initUI();
-}
+<a data-href="http://baidu.com" target="navView" rel="test" data-external="true"
+  >test</a
+>
 ```
 
-> navView 外部链接
+### navTab 返回 Home navTab 页面 回调 home_render
+
 ```html
-<a data-href="http://baidu.com" target="navView" rel="test" data-external="true">test</a>
+<a
+  class="bar-button"
+  data-href="home.html?dwz_callback=home_render"
+  target="navTab"
+  rel="home"
+  >test</a
+>
 ```
 
-> navTab 返回Home navTab页面 回调 home_render
-```html
-<a class="bar-button" data-href="home.html?dwz_callback=home_render" target="navTab" rel="home">test</a>
-```
-> ajaxTodo 用于收藏、关注等操作
+### ajaxTodo 用于收藏、关注等操作
+
 ```html
 <a class="active" target="ajaxTodo" data-url="{{serverUrl}}">test</a>
 ```
 
-> 绑定事件传参数
-```javascript
-$('body').on($.event.hasTouch ? 'touchstart' : 'click', function(event){
-    console.log(this.data);
-    event.preventDefault();
-}, {test1:'a', test2:'b'});
-```
+### unitBox
 
-> trigger 传参数
-```javascript
-$('body').on('custom.event', function(event){
-    console.log(this.data);
-    event.preventDefault();
-});
-$('body').trigger('custom.event', {test1:'a1', test2:'b1'});
-```
-
-> 绑定多个事件, 空格分隔的多个事件名称
-```javascript
-$(document).on('touchstart touchmove', function (event) {
-    console.log(event.type);
-});
-```
-
-> unitBox
 ```javascript
 $box.parentsUnitBox();
 ```
 
-> parentsUntil
+### parentsUntil
+
 ```javascript
-$box.parentsUntil(function(){
-    return $(this).is('selector');
+$box.parentsUntil(function () {
+  return $(this).is("selector");
 });
 ```
 
-> 下拉菜单联动
+### 下拉菜单联动
+
 ```html
-<select name="test" class="toggleSelectRef" data-ref-box="#toggleSelectRef_test1|#toggleSelectRef_test2" data-ctr-show="true" data-ref-val="1,3|2,3">
-	<option value="1">显示1</option>
-	<option value="2">显示2</option>
-	<option value="3">显示1，2</option>
-	<option value="4">全部不显示</option>
+<select
+  name="test"
+  class="toggleSelectRef"
+  data-ref-box="#toggleSelectRef_test1|#toggleSelectRef_test2"
+  data-ctr-show="true"
+  data-ref-val="1,3|2,3"
+>
+  <option value="1">显示1</option>
+  <option value="2">显示2</option>
+  <option value="3">显示1，2</option>
+  <option value="4">全部不显示</option>
 </select>
 <div id="toggleSelectRef_test1">
-	# 下拉菜单联动控制局部box显示隐藏, class="toggleSelectRef" [data-ref-box] [data-ref-val]
-	[data-ctr-show] 可选，默认控制隐藏，为true时控制显示
+  # 下拉菜单联动控制局部box显示隐藏, class="toggleSelectRef" [data-ref-box]
+  [data-ref-val] [data-ctr-show] 可选，默认控制隐藏，为true时控制显示
 </div>
-<div id="toggleSelectRef_test2">
-	test2
-</div>
+<div id="toggleSelectRef_test2">test2</div>
 ```
 
-> 表单验证input中文验证
+### 表单验证 input 中文验证
+
+```
 pattern="[\u4e00-\u9fa5]{1,20}"
 pattern=".{1,20}"
+```
 
-### JS模版
+> ## JS 模版
 
-[腾讯art-template](https://github.com/aui/art-template)
+[腾讯 art-template](https://github.com/aui/art-template)
+
 - https://aui.github.io/art-template/docs/
 - https://blog.csdn.net/pupilxiaoming/article/details/77118855
 
@@ -165,16 +212,15 @@ template.compile(source, options);
 template.render(source, data, options);
 ```
 
-### 跨域
+> ## 跨域
 
-> Apache测试环境跨域
+> Apache 测试环境跨域
 
 RewriteEngine On
-RewriteRule ^/app_proxy/(.*)$ http://api.xxx.com/$1 [P,L]
+RewriteRule ^/app_proxy/(.\*)$ http://api.xxx.com/$1 [P,L]
 
-/etc/apache2/httpd.conf 放开proxy和mod_rewrite模块
+/etc/apache2/httpd.conf 放开 proxy 和 mod_rewrite 模块
 
-> 开发环境跨域chrome跨域
+> 开发环境跨域 chrome 跨域
 
-Allow-Control-Allow-Origin: *
-
+Allow-Control-Allow-Origin: \*
