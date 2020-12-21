@@ -85,7 +85,7 @@ module.faceDetect(
 
 ```bash
 cd Android_命令处理包/assets
-jar -cvf DwzBaiduFaceLiveLicense.jar \*
+jar -cvf DwzBaiduFaceLiveLicense.jar ./*
 ```
 
 3. 在`Android_命令处理包`目录下会生成 `DwzBaiduFaceLiveLicense.jar` 文件
