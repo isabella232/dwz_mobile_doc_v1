@@ -10,7 +10,7 @@
 
 - 原生 App 模块
 
-  - [DwzBaiduFaceLive 百度人脸采集](doc/apicloud/DwzBaiduFaceLive.md)
+  - [DwzBaiduFaceLive 百度人脸采集](doc/apicloud/DwzBaiduFaceLiveLicense.md)
   - [第三方 Apicloud 原生模块示例](doc/apicloud/OtherModule.md)
 
 - [打包 iOS & Android](doc/apicloud/package.md)
