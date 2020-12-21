@@ -17,7 +17,7 @@
 
 1. 使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。[百度开发平台控制台](https://console.bce.baidu.com/ai/#/ai/face/overview/index)
    ![](../../_media/apicloud/DwzBaiduFaceLive/11.jpg)
-2. License 文件打包模块包需注意事项请参考 [License 打包模块包注意事项](/doc/apicloud/DwzBaiduFaceLiveLicense.md)，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用
+2. License 文件打包模块包需注意事项请参考 [模块配套授权包制作](/doc/apicloud/DwzBaiduFaceLive?id=模块配套授权包制作)，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用
 3. APICloud 模块市场搜索 DwzBaiduFaceLive，增加到 APICloud 工程中
 4. 使用此模块之前先配置 config.xml 文件，配置完毕后，需通过云端编译生效，配置方法如下：
 
@@ -68,3 +68,39 @@ module.faceDetect(
   }
 );
 ```
+
+> ## 模块配套授权包制作
+
+### 下载 DwzBaiduFaceLiveLicense.zip
+
+制作 Android 和 iOS 授权包之前先下载 [DwzBaiduFaceLiveLicense.zip](http://mobile.jui.org/apk/DwzBaiduFaceLiveLicense.zip)
+
+### Android 授权包
+
+- 需要先确认自己的电脑安装了 jdk，配置 javahome 环境变量
+
+1. 请将 `Android_命令处理包/assets` 目录下 `idl-license.face-android` 文件下替换为 Android 的 License 文件
+
+2. 在 cmd 中切换到`Android_命令处理包`目录下，执行命令
+
+```bash
+cd Android_命令处理包/assets
+jar -cvf DwzBaiduFaceLiveLicense.jar \*
+```
+
+3. 在`Android_命令处理包`目录下会生成 `DwzBaiduFaceLiveLicense.jar` 文件
+
+4. 将生成的 `DwzBaiduFaceLiveLicense.jar` 文件替换`zip/android/DwzBaiduFaceLiveLicense/source` 下的 `DwzBaiduFaceLiveLicense.jar` 文件
+
+5. 将`zip/android/DwzBaiduFaceLiveLicense` 文件夹压缩为 `DwzBaiduFaceLiveLicense.zip`, 需要包含一层模块目录
+
+### iOS 授权包
+
+1. 将`zip/ios/DwzBaiduFaceLiveLicense/target` 下的 `idl-license.face-android` 替换为你自己的 `idl-license.face-ios` 文件
+2. 将`zip/ios/DwzBaiduFaceLiveLicense` 文件夹压缩为 `DwzBaiduFaceLiveLicense.zip`
+
+> ## 模块配套授权包上传
+
+1. 登录 APICloud，进入一个 App 管理界面
+2. 点击 App 管理界面中的 模块 -> 自定义模块 -> 上传自定义模块
+   ![](../../_media/apicloud/DwzBaiduFaceLive/21.jpg)
