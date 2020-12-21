@@ -12,7 +12,7 @@
 6. 真机代码同步 `npm run sync`
 7. 控制台查看真机运行日志 `npm run log`
 
-> ## 云打包
+> ## 云编译
 
 1. 代码压缩混淆打包 `npm run build`
 2. index.html 页面中 `loadScripts({env: 'dev'})` 改成 `loadScripts({env: 'build'})`
@@ -34,4 +34,4 @@ xcrun altool --upload-app -f dwz_mobile_app.ipa -t iOS --apiKey xxxxxxxxx --apiI
 
 4. 在 apicloud 平台上 App 版本栏目下，更新安卓 apk 下载 url，和苹果 App 应用商店 url
    ![](../../_media/readme/apicloud_4.jpg)
-5. [安装 mam 版本检测更新模块](../../doc/apicloud/OtherModule?id=mam-模块)
+5. [安装 mam 版本检测更新模块](/doc/apicloud/OtherModule?id=mam-模块)

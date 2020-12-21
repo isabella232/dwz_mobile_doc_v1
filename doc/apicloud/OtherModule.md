@@ -1,6 +1,6 @@
 > ## mam 模块
 
-- [用于 App 版本检测更新](../../doc/apicloud/package?id=发布和版本更新)
+- [用于 App 版本检测更新](/doc/apicloud/package?id=发布和版本更新)
 - [APICloud 平台在线文档](https://www.apicloud.com/mod_detail/mam)
 - DWZ Mobile 框架中已经包含了 mam 模块 App 更新代码逻辑
   ![](../../_media/readme/checkUpdate.jpg)

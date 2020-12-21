@@ -43,12 +43,12 @@ git clone https://gitee.com/dwzteam/dwz_mobile_app.git
 
 ### 3. Android、iOS 手机真机调试
 
-- [Android & iOS 真机调试文档](./doc/apicloud/package?id=真机调试)
+- [Android & iOS 真机调试文档](/doc/apicloud/package?id=真机调试)
 
 ### 4. 打包发布
 
-- [Android & iOS 云打包文档](./doc/apicloud/package?id=云打包)
-- [Android & iOS 发布和版本更新提示文档](./doc/apicloud/package?id=发布和版本更新)
+- [Android & iOS 云打包文档](/doc/apicloud/package?id=云编译)
+- [Android & iOS 发布和版本更新提示文档](/doc/apicloud/package?id=发布和版本更新)
 
 > ## 联系
 
