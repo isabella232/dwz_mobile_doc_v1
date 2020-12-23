@@ -1,11 +1,13 @@
 > ## 功能介绍
 
-- HTML5 跨平台支持（Android & iOS）
-- 人脸识别后可以精准截取头像
-- 基于百度人脸采集 SDK，分 2 个版本：
+- 本模块封装了新版百度开放平台的人脸识别采集 SDK(活体检测)，包含 2 个接口：
   - 包含活体动作 `faceLiveness()`
   - 不包含活体动作 `faceDetect()`
-  - [dwzBaiduFaceLive 模块前端调用示例 biz.faceBaidu.js](https://github.com/dwzteam/dwz_mobile_app/blob/master/widget/js/biz.baiduFace.js)
+- 人脸识别后可以精准截取头像，从而解决了某些第三方实名认证接口图像大小不能超过 50K 的问题
+- 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面
+- 可以免费从百度 AI 平台获取人脸采集证书
+- HTML5 跨平台支持（Android & iOS）
+- [dwzBaiduFaceLive 模块前端调用示例 biz.faceBaidu.js](https://github.com/dwzteam/dwz_mobile_app/blob/master/widget/js/biz.baiduFace.js)
 
 > ## 效果展示
 
