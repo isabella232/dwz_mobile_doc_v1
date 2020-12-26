@@ -10,6 +10,10 @@
 	<meta name="keywords" content="DWZ 移动端开发文档" />
 
 	<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css"> -->
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css"> -->
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dolphin.css"> -->
 	<style type="text/css">
 		img[data-origin] {
 			max-width: 800px;
@@ -74,7 +78,8 @@
 					var footer = [
 						'<hr/>',
 						'<footer>',
-						'<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+						'<span>技术QQ：350863780</span>',
+						'<span style="padding-left: 20px">Powered by <a href="https://jui.org" target="_blank">DWZ团队</a></span>',
 						'</footer>'
 					].join('');
 					hook.afterEach(function(html) {
@@ -99,8 +104,13 @@
 	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 	<script src="//unpkg.com/docsify-copy-code"></script>
-	<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
 	<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+
+	<!-- 添加额外的语法支持需要通过CDN添加相应的语法文件, 默认支持：markup, html, xml, svg, mathml, ssml, atom, rss, css, clike, javascript, js -->
+	<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
 
 	<!-- CDN files for docsify-katex 支持公式 -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>

@@ -31,7 +31,7 @@
 
 ### 1. 下载 DWZ Mobile 开源项目源码
 
-```
+```bash
 git clone https://gitee.com/dwzteam/dwz_mobile_app.git
 ```
 

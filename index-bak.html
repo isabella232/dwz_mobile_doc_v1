@@ -9,13 +9,11 @@
 	<meta name="description" content="DWZ 移动端开发文档" />
 	<meta name="keywords" content="DWZ 移动端开发文档" />
 
-	<!-- 主题风格 -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+	<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css"> -->
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css"> -->
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dolphin.css"> -->
-
 	<style type="text/css">
 		img[data-origin] {
 			max-width: 800px;
@@ -55,27 +53,26 @@
 		window.$docsify = {
 			el: '#app',
 			name: 'DWZ Mobile文档',
-			repo: 'git@gitee.com:dwzteam/dwz_mobile_doc_v1.git',
+			search: {
+				maxAge: 86400000,
+				noData: {
+					'/': '找不到结果'
+				},
+				paths: 'auto',
+				placeholder: {
+					'/': '输入您的关键词进行搜索'
+				}
+			},
+			repo: 'https://gitee.com/dwzteam/dwz_mobile_doc_v1.git/',
 			// loadNavbar: true,
 			loadSidebar: true,
 			maxLevel: 5,
-			subMaxLevel: 3,
+			subMaxLevel: 4,
 			auto2top: true,
 			coverpage: true,
 			autoHeader: false,
 			formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}',
 			notFoundPage: '_404.md',
-			search: {
-				maxAge: 86400000, // 过期时间，单位毫秒，默认一天 86400000
-				noData: {
-					'/': '找不到结果'
-				},
-				paths: 'auto', // or auto
-				depth: 4, // 搜索标题的最大程级, 1 - 6
-				placeholder: {
-					'/': '输入您的关键词进行搜索'
-				}
-			},
 			plugins: [
 				function(hook, vm) {
 					var footer = [
@@ -104,16 +101,16 @@
 			}
 		}
 	</script>
-	<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+	<script src="//unpkg.com/docsify-copy-code"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
 
 	<!-- 添加额外的语法支持需要通过CDN添加相应的语法文件, 默认支持：markup, html, xml, svg, mathml, ssml, atom, rss, css, clike, javascript, js -->
-	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
 
 	<!-- CDN files for docsify-katex 支持公式 -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
