@@ -1,18 +1,17 @@
-
-
 ## 文件说明
 
-- `package-win_x64.bat`：打包程序用的脚本，将zip文件自动包装为.nw文件后部署到nwjs打包插件的目录下，并自动转换为nwjs认可的exe（待打包）文件，最后自动打开配置好的**Enigma Virtual Box**程序
-- `deploy-win_x64.bat`：使用**Enigma Virtual Box**打包程序完成后，执行该脚本，自动将打包好的exe（用户可用）文件部署到对应产品目录下。
+- `package-win_x64.bat`：打包程序用的脚本，将 zip 文件自动包装为.nw 文件后部署到 nwjs 打包插件的目录下，并自动转换为 nwjs 认可的 exe（待打包）文件，最后自动打开配置好的**Enigma Virtual Box**程序
+- `deploy-win_x64.bat`：使用**Enigma Virtual Box**打包程序完成后，执行该脚本，自动将打包好的 exe（用户可用）文件部署到对应产品目录下。
 
 ## 使用前的准备
 
-需要先手动打开**Enigma Virtual Box**程序配置好相关内容    
-![](../_media/other/e2e3b556.png)    
-然后`ctrl + s`保存为快捷文件`x64.evb`，这一步主要为了方便package中自动打开**Enigma Virtual Box**程序
+需要先手动打开**Enigma Virtual Box**程序配置好相关内容  
+![](../_media/other/e2e3b556.png)  
+然后`ctrl + s`保存为快捷文件`x64.evb`，这一步主要为了方便 package 中自动打开**Enigma Virtual Box**程序
 
 ## 示例
-我现在在用的项目结构示例（春熙路互动投影墙）：    
+
+我现在在用的项目结构示例（春熙路互动投影墙）：  
 ![](../_media/other/1cee7748.png)
 
 `package-win_x64.bat`脚本示例：
@@ -48,6 +47,7 @@ pause
 ```
 
 `deploy-win_x64.bat`脚本示例：
+
 ```
 :: nwjs打包程序
 :: copy /b nw.exe+extend.nw extend.exe
@@ -75,9 +75,9 @@ pause
 
 以互动投影墙项目为例：
 
-- 项目源码copy到`app`目录下
-- 在`app`目录中全选文件，然后压缩成`app.zip`(一定要是zip)
-- 剪切`app.zip`到上一级目录（和脚本、app目录同级的目录）
+- 项目源码 copy 到`app`目录下
+- 在`app`目录中全选文件，然后压缩成`app.zip`(一定要是 zip)
+- 剪切`app.zip`到上一级目录（和脚本、app 目录同级的目录）
 - 执行`package-win_x64.bat`
 - 在**Enigma Virtual Box**中打包完成后，执行`deploy-win_x64.bat`脚本
 - 打包`互动投影墙安装程序`目录成`互动投影墙安装程序-xxx.zip`发给甲方（这一步非必要）

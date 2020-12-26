@@ -37,12 +37,15 @@
 
 > 包含活体动作调用
 
-```javascript
+活体参数可配制，至少需要配制一个活体动作
+
+```js
 const module = api.require("dwzBaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
     cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+    eye: true, // 活体动作，眨眼(默认:false)
     mouth: false, // 活体动作，张嘴(默认:false)
     headRight: false, // 活体动作，向右转头(默认:false)
     headLeft: false, // 活体动作，向左转头(默认:false)
@@ -58,7 +61,7 @@ module.faceLiveness(
 
 > 不包含活体动作调用
 
-```javascript
+```js
 const module = api.require("dwzBaiduFaceLive");
 module.faceDetect(
   {
@@ -70,6 +73,26 @@ module.faceDetect(
   }
 );
 ```
+
+> 回调 callback(ret, err)
+
+ret：
+
+- 类型：JSON 对象
+- 内部字段：
+
+```json
+{
+  "status": 1, //状态值（整数）；1||0，人脸识别成功/失败
+  "message": "错误提示", // 当status为0时返回错误信息
+  "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
+}
+```
+
+err：
+
+- 类型：JSON 对象
+- 内部字段：没有用到
 
 > ## 模块配套授权包制作
 

@@ -3,7 +3,73 @@
 - [用于 App 版本检测更新](/doc/apicloud/package?id=发布和版本更新)
 - [APICloud 平台在线文档](https://www.apicloud.com/mod_detail/mam)
 - DWZ Mobile 框架中已经包含了 mam 模块 App 更新代码逻辑
-  ![](../../_media/readme/checkUpdate.jpg)
+
+```js
+// mam 模块检测新版本
+function checkUpdate() {
+  const mam = api.require("mam");
+  mam.checkUpdate(function (ret, err) {
+    if (ret && ret.status) {
+      const result = ret.result;
+      if (result.update) {
+        const msg =
+          "新版本型号:" +
+          result.version +
+          ";更新提示语:" +
+          result.updateTip +
+          ";发布时间:" +
+          result.time;
+        const buttons = result.closed ? ["确定"] : ["确定", "取消"];
+        api.confirm(
+          {
+            title: "有新的版本,是否下载并安装 ",
+            msg,
+            buttons,
+          },
+          function (ret, err) {
+            if (ret.buttonIndex == 1) {
+              updateApp(result);
+            } else if (ret.buttonIndex == 2 && result.closed) {
+              api.closeWidget({ silent: true });
+            }
+          }
+        );
+      }
+    } else {
+      $.alert.toast(err.msg);
+    }
+  });
+}
+
+// 版本更新
+function updateApp(result) {
+  if (api.systemType == "android") {
+    api.download(
+      {
+        url: result.source,
+        report: true,
+      },
+      function (ret, err) {
+        if (ret && !ret.state) {
+          /* 下载进度 */
+          $.alert.toast("正在下载应用" + ret.percent + "%");
+        }
+        if (ret && ret.state) {
+          /* 下载完成 */
+          const savePath = ret.savePath;
+          api.installApp({
+            appUri: savePath,
+          });
+        }
+      }
+    );
+  } else if (api.systemType == "ios") {
+    api.installApp({
+      appUri: result.source,
+    });
+  }
+}
+```
 
 > ## aMapNavigation 模块
 

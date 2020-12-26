@@ -1,11 +1,4 @@
-﻿/_
-Title: dwzBaiduFaceLive
-Description: 本模块封装了新版百度开放平台的人脸识别客户端 SDK(活体检测)，支持活体识别和普通识别 2 种方式。
-人脸识别完成截取头像，从而解决了某些第三方实名认证接口图像大小不能超过 50K 的问题。
-人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面。
-_/
-
-<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
+﻿<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
 
 <div class="outline">
 [faceLiveness](#a1)
@@ -16,9 +9,11 @@ _/
 
 # **模块示例**
 
-为帮助用户更好更快的使用模块，维护了一个示例，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
+为帮助用户更好更快的使用模块，维护了一个[示例](https://community.apicloud.com/bbs/forum.php?mod=viewthread&tid=169335)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
 
-模块 demo 示例：http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive
+[模块配套百度授权包配制文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
+
+[git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
 # **概述**
 
@@ -49,19 +44,9 @@ _/
     </feature>
 ```
 
-- 字段描述:
+## **License 文件打包模块包需注意事项**
 
-  **urlScheme**：（必须配置）用于实现应用间跳转及数据交换，本应用可以启动微信客户端，也可以从微信客户端跳回本应用。urlScheme 的 value 值是从微信开放平台获取的 appid。appid 申请方法参考[微信开放平台接入文档](//docs.apicloud.com/APICloud/开放平台接入指南/weChat)。
-
-  **apiKey**：（必须配置）从微信开放平台获取的 appid，值与 urlScheme 相同。appid 申请方法参考[微信开放平台接入文档](//docs.apicloud.com/APICloud/开放平台接入指南/weChat)。
-
-  **apiSecret**：从微信开放平台获取的 secret。**获取 accessToken 时需要配置此项**。appid 申请方法参考[微信开放平台接入文档](//docs.apicloud.com/APICloud/开放平台接入指南/weChat)。
-
-**Android 系统平台上需注意事项请参考[微信集成注意事项](//community.apicloud.com/bbs/forum.php?mod=viewthread&tid=9307)**
-<img src="/img/docImage/module-doc-img/sdk/wx/wx1.PNG" width=400 />
-<img src="/img/docImage/module-doc-img/sdk/wx/wx2.PNG" width=400 />
-
-License 文件打包模块包需注意事项请参考 License 打包模块包注意事项，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用。
+请参考 License 打包模块包注意事项，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用。
 **[人脸识别模块配套授权包制作](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)**
 
 ## **模块接口**
@@ -70,7 +55,7 @@ License 文件打包模块包需注意事项请参考 License 打包模块包注
 
 # **faceLiveness**
 
-包含活体动作人脸识别
+包含活体动作人脸识别，活体参数可配制，至少需要配制一个活体动作
 
 faceLiveness(callback(ret, err))
 
@@ -108,6 +93,7 @@ module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
     cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+    eye: true, // 活体动作，眨眼(默认:false)
     mouth: false, // 活体动作，张嘴(默认:false)
     headRight: false, // 活体动作，向右转头(默认:false)
     headLeft: false, // 活体动作，向左转头(默认:false)
