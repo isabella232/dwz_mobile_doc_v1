@@ -34,7 +34,7 @@
 </feature>
 ```
 
-- 注意 config.xml feature 节点 dwzBaiduFaceLive 中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
+- 注意 config.xml `<feature name="dwzBaiduFaceLive">` 节点中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
   ![](../../_media/apicloud/dwzBaiduFaceLive/12.jpg)
 
 5. [自定义 Loader 编译，真机调试](/doc/apicloud/package?id=真机调试)或者[云编译测试版](/doc/apicloud/package?id=云编译)
