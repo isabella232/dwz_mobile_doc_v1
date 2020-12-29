@@ -11,7 +11,7 @@
 
 为帮助用户更好更快的使用模块，维护了一个[示例](https://community.apicloud.com/bbs/forum.php?mod=viewthread&tid=169335)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
 
-[模块配套百度授权包配制文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
+[模块配套百度授权包配制](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
 
 [git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
@@ -20,7 +20,7 @@
 **dwzBaiduFaceLive 模块概述**
 
 本模块封装了新版百度开放平台的人脸识别客户端 SDK(活体检测)，支持活体识别和普通识别 2 种方式。
-人脸识别完成截取头像，支持人脸图片分辨率设置，支持图片压缩比设置，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题。
+支持人脸识别截取头像，支持人脸图片分辨率设置，支持图片压缩比设置，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题。
 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面。
 
 **不能同时使用的模块：其它百度人脸识别模块**
@@ -36,22 +36,20 @@
 - 配置示例:
 
 ```xml
-   <feature name="dwzBaiduFaceLive">
-        <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/>
-        <param name="LicenseFileName_iOS" value="idl-license.face-ios"/>
-        <param name="LicenseID_Android" value="DwzMobileApp-face-android"/>
-        <param name="LicenseFileName_Android" value="idl-license.face-android"/>
-    </feature>
+<feature name="dwzBaiduFaceLive">
+  <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/><!--对应百度 `iOS License ID`-->
+  <param name="LicenseFileName_iOS" value="idl-license.face-ios"/>
+  <param name="LicenseID_Android" value="DwzMobileApp-face-android"/><!--对应百度 `安卓 License ID`-->
+  <param name="LicenseFileName_Android" value="idl-license.face-android"/>
+</feature>
 ```
 
 ## **License 文件打包模块包需注意事项**
 
 请参考 License 打包模块包注意事项，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用。
-**[人脸识别模块配套授权包制作](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)**
 
-## **模块接口**
-
-<div id="a1"></div>
+- [人脸识别模块配套授权包制作文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
+- 注意 config.xml feature 节点 dwzBaiduFaceLive 中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
 
 # **faceLiveness**
 

@@ -27,12 +27,15 @@
 
 ```xml
 <feature name="dwzBaiduFaceLive">
-    <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/>
+    <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/><!--对应百度 `iOS License ID`-->
     <param name="LicenseFileName_iOS" value="idl-license.face-ios"/>
-    <param name="LicenseID_Android" value="DwzMobileApp-face-android"/>
+    <param name="LicenseID_Android" value="DwzMobileApp-face-android"/><!--对应百度 `安卓 License ID`-->
     <param name="LicenseFileName_Android" value="idl-license.face-android"/>
 </feature>
 ```
+
+- 注意 config.xml feature 节点 dwzBaiduFaceLive 中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
+  ![](../../_media/apicloud/dwzBaiduFaceLive/12.jpg)
 
 5. [自定义 Loader 编译，真机调试](/doc/apicloud/package?id=真机调试)或者[云编译测试版](/doc/apicloud/package?id=云编译)
 6. 代码调用
