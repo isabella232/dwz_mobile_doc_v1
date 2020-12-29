@@ -12,28 +12,35 @@ function checkUpdate() {
     if (ret && ret.status) {
       const result = ret.result;
       if (result.update) {
-        const msg =
-          "新版本型号:" +
-          result.version +
-          ";更新提示语:" +
-          result.updateTip +
-          ";发布时间:" +
-          result.time;
-        const buttons = result.closed ? ["确定"] : ["确定", "取消"];
-        api.confirm(
-          {
-            title: "有新的版本,是否下载并安装 ",
-            msg,
-            buttons,
-          },
-          function (ret, err) {
-            if (ret.buttonIndex == 1) {
-              updateApp(result);
-            } else if (ret.buttonIndex == 2 && result.closed) {
-              api.closeWidget({ silent: true });
+        const msg = `新版本型号:${result.version};更新提示语:${result.updateTip};发布时间:${result.time}`;
+
+        if (result.closed) {
+          api.alert(
+            {
+              title: "有新的版本，请下载并安装",
+              msg,
+              buttons: ["确定"],
+            },
+            function (ret, err) {
+              if (ret.buttonIndex == 1) {
+                biz.updateApp(result);
+              }
             }
-          }
-        );
+          );
+        } else {
+          api.confirm(
+            {
+              title: "有新的版本，是否下载并安装",
+              msg,
+              buttons: ["确定", "取消"],
+            },
+            function (ret, err) {
+              if (ret.buttonIndex == 1) {
+                biz.updateApp(result);
+              }
+            }
+          );
+        }
       }
     } else {
       $.alert.toast(err.msg);
