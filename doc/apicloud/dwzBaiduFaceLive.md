@@ -111,7 +111,7 @@ err：
 
 ### 下载 dwzBaiduFaceLiveLicense.zip
 
-制作 Android 和 iOS 授权包之前先下载 [dwzBaiduFaceLiveLicense.zip](http://mobile.jui.org/apk/dwzBaiduFaceLiveLicense.zip)
+制作 Android 和 iOS 授权包之前先下载 [dwzBaiduFaceLiveLicense.zip](https://gitee.com/dwzteam/dwz_mobile_doc_v1/blob/master/_media/apicloud/dwzBaiduFaceLive/dwzBaiduFaceLiveLicense.zip)
 
 ### Android 授权包
 
