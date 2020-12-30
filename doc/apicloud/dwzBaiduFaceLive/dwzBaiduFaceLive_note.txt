@@ -1,15 +1,10 @@
 ﻿dwzBaiduFaceLive 模块 1.0.1 版本更新 note：
 
-1. iOS 端调整活体动作配制，如果一个动作都没配制增加报错提示；
-2. Android 端调整活体动作配制，如果一个动作都没配制增加报错提示；
-
-
-dwzBaiduFaceLive 模块 1.0.2 版本更新 note：
-
-1. iOS 和 Android 端 faceLiveness 包含活体动作方法增加 2 个参数: 
+1. iOS & Android 端 faceLiveness 包含活体动作方法增加 2 个参数: 
     - cropHeight: 人脸抠图高的设定，用于设定模块返回人脸图片的分辨率；
     - quality: 人脸抠图压缩质量，用于设定模块返回人脸图片的压缩比；
-2. iOS 和 Android 端 faceDetect 不包含活体动作方法增加 2 个参数: 
+2. iOS & Android 端 faceDetect 不包含活体动作方法增加 2 个参数: 
     - cropHeight: 人脸抠图高的设定，用于设定模块返回人脸图片的分辨率；
     - quality: 人脸抠图压缩质量，用于设定模块返回人脸图片的压缩比；
 3. 人脸识别模块接口参数 cropHeight、quality 配合控制识别后的人脸抠图控制在20K以内；
+4. iOS & Android 端调整活体动作配制，如果一个动作都没配制增加报错提示；
