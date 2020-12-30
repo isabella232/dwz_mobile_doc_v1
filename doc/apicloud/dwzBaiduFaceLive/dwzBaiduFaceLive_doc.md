@@ -1,6 +1,7 @@
 ﻿<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
 
 <div class="outline">
+
 [faceLiveness](#a1)
 
 [faceDetect](#a2)
@@ -37,9 +38,9 @@
 
 ```xml
 <feature name="dwzBaiduFaceLive">
-  <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/><!--对应百度 `iOS License ID`-->
+  <param name="LicenseID_iOS" value="DwzMobileApp-face-ios"/>
   <param name="LicenseFileName_iOS" value="idl-license.face-ios"/>
-  <param name="LicenseID_Android" value="DwzMobileApp-face-android"/><!--对应百度 `安卓 License ID`-->
+  <param name="LicenseID_Android" value="DwzMobileApp-face-android"/>
   <param name="LicenseFileName_Android" value="idl-license.face-android"/>
 </feature>
 ```
@@ -51,11 +52,13 @@
 - [人脸识别模块配套授权包制作文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
 - 注意 config.xml `<feature name="dwzBaiduFaceLive">` 节点中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
 
+<div id="a1"></div>
+
 # **faceLiveness**
 
 包含活体动作人脸识别，活体参数可配制，至少需要配制一个活体动作
 
-faceLiveness(callback(ret, err))
+faceLiveness({cropType: 1, cropHeight: 300, quality: 70, eye: true}, callback(ret, err){})
 
 ## callback(ret, err)
 
@@ -64,7 +67,7 @@ ret：
 - 类型：JSON 对象
 - 内部字段：
 
-```js
+```json
 {
   status: 1, //状态值（整数）；1||0，人脸识别成功/失败
   message: "错误提示", // 当status为0时返回错误信息
@@ -75,23 +78,17 @@ ret：
 err：
 
 - 类型：JSON 对象
-- 内部字段：
-
-```js
-{
-  code: 0; //数字类型；
-}
-```
+- 内部字段：没用到
 
 ## 示例代码
 
 ```js
-const module = api.require("dwzBaiduFaceLive");
+var module = api.require("dwzBaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
     cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+    cropHeight: 300, // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
     quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
     eye: true, // 活体动作，眨眼(默认:false)
     mouth: false, // 活体动作，张嘴(默认:false)
@@ -99,7 +96,7 @@ module.faceLiveness(
     headLeft: false, // 活体动作，向左转头(默认:false)
     headUp: false, // 活体动作，向上抬头(默认:false)
     headDown: false, // 活体动作，向下低头(默认:false)
-    headLeftOrRight: false, // 活体动作，摇头(默认:false)
+    headLeftOrRight: false // 活体动作，摇头(默认:false)
   },
   function (ret, err) {
     alert(JSON.stringify(ret));
@@ -114,11 +111,12 @@ iOS 系统，Android 系统
 可提供的 1.0.0 及更高版本
 
 <div id="a2"></div>
+
 # **faceDetect**
 
 不包含活体动作人脸识别
 
-faceDetect(callback(ret, err))
+faceDetect({cropType: 1, cropHeight: 300, quality: 70}, callback(ret, err){})
 
 ## callback(ret, err)
 
@@ -127,7 +125,7 @@ ret：
 - 类型：JSON 对象
 - 内部字段：
 
-```js
+```json
 {
   status: 1, //状态值（整数）；1||0，人脸识别成功/失败
   message: "错误提示", // 当status为0时返回错误信息
@@ -138,24 +136,18 @@ ret：
 err：
 
 - 类型：JSON 对象
-- 内部字段：
-
-```js
-{
-  code: 0; //数字类型；
-}
-```
+- 内部字段：没用到
 
 ## 示例代码
 
 ```js
-const module = api.require("dwzBaiduFaceLive");
+var module = api.require("dwzBaiduFaceLive");
 module.faceDetect(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
     cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+    cropHeight: 300, // // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+    quality: 70 // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
   },
   function (ret, err) {
     alert(JSON.stringify(ret));

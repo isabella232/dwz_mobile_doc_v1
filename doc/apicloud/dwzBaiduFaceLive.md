@@ -47,7 +47,7 @@
 活体参数可配制，至少需要配制一个活体动作
 
 ```js
-const module = api.require("dwzBaiduFaceLive");
+var module = api.require("dwzBaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -73,7 +73,7 @@ module.faceLiveness(
 > 不包含活体动作调用
 
 ```js
-const module = api.require("dwzBaiduFaceLive");
+var module = api.require("dwzBaiduFaceLive");
 module.faceDetect(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
