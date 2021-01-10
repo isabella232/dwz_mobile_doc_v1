@@ -1,4 +1,9 @@
-﻿<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
+﻿/*
+Title: dwzBaiduFaceLive
+Description: dwzBaiduFaceLive
+*/
+
+<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
 
 <div class="outline">
 

@@ -4,6 +4,11 @@
 - 基于原生 JS 轻量级移动端开发框架，核心代码库 dwz.core.js 使用方式和 jQuery 80%相似，针对移动端精简优化代码（核心库代码相当于 jQuery 的十分之一）。
 - [DWZ Mobile 详细文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1)
 
+**Require:**
+
+- node\^10.13.0 `https://nodejs.org/en/download`
+- npm\^6.14.5 `新版的nodejs已经集成了npm`
+
 > ## Demo 演示
 
 - 在线演示版，使用 chrome 开发模式设置手机版 `http://mobile.jui.org`
@@ -21,11 +26,6 @@
 3. 统一风格：UI 组件不依赖于第三方组件库，都是统一封装的，组件样式可以灵活定制。
 4. 跨平台：Android 应用、iOS 应用、公众号。
 5. 支持屏幕自适配：手机、平板、PC、大屏（包含非正常比例拼接屏）界面布局可以支持自动适配。
-
-**Require:**
-
-- node\^10.13.0 `https://nodejs.org/en/download`
-- npm\^6.14.5 `新版的nodejs已经集成了npm`
 
 > ## Quickstart
 
