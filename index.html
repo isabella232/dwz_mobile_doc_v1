@@ -44,6 +44,27 @@
 			height: 568px;
 			margin: 5px;
 		}
+		
+		@media screen and (max-width: 600px) {
+			img[data-origin] {
+				max-width: 500px;
+				max-height: 500px;
+			}
+			img[src$="width=200"] {
+				width: 160px;
+			}
+			img[src$="width=400"] {
+				width: 320px;
+			}
+			img[src$="height=360"] {
+				height: 320px;
+				margin: 5px;
+			}
+			img[src$="height=568"] {
+				height: 468px;
+				margin: 5px;
+			}
+		}
 	</style>
 
 </head>
