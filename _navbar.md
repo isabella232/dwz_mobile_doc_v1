@@ -25,10 +25,6 @@
 
 - [打包发布](doc/apicloud/package.md)
 
-<!--
-- [案例视频展示](doc/video/ppt.md)
--->
-
 - 其它
 
   - [Markdown 手册](doc/other/markdown.md)
@@ -37,3 +33,4 @@
   - [关于 docsify](doc/other/docsify.md)
   - [nwjs 打包 exe 文件+修改图标](doc/nwjs/usage.md)
   - [nwjs 自动打包部署 exe 文件](doc/nwjs/package.md)
+  <!-- - [案例视频展示](doc/video/ppt.md) -->
