@@ -1,3 +1,5 @@
+# dwzBaiduFaceLive 人脸识别
+
 > ## 功能介绍
 
 - 本模块封装了新版百度开放平台的人脸识别采集 SDK(活体检测)，包含 2 个接口：
@@ -130,6 +132,8 @@ jar -cvf dwzBaiduFaceLiveLicense.jar ./*
 4. 将生成的 `dwzBaiduFaceLiveLicense.jar` 文件替换`zip/android/dwzBaiduFaceLiveLicense/source` 下的 `dwzBaiduFaceLiveLicense.jar` 文件
 
 5. 将`zip/android/dwzBaiduFaceLiveLicense` 文件夹压缩为 `dwzBaiduFaceLiveLicense.zip`, 需要包含一层模块目录
+
+![](../../_media/apicloud/dwzBaiduFaceLive/jar.jpg)
 
 ### iOS 授权包
 

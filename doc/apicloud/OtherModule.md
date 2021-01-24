@@ -1,3 +1,5 @@
+# Apicloud 第三方原生模块示例
+
 > ## mam 模块
 
 - [用于 App 版本检测更新](/doc/apicloud/package?id=发布和版本更新)
@@ -100,6 +102,12 @@ biz.openMapNav({lng:120.005807, lat:30.278029});
 ![](../../_media/apicloud/FNImageClip/2.jpg?height=360)
 ![](../../_media/apicloud/FNImageClip/3.jpg?height=360)
 ![](../../_media/apicloud/FNImageClip/4.jpg?height=360)
+
+> ## clipBoard 模块
+
+- clipBoard 模块封装剪切板的相关功能，可实现向剪切版复制、读取字符串相关操作
+- [APICloud 平台在线文档](https://www.apicloud.com/mod_detail/clipBoard)
+- 配合 DWZ Mobile 模块 input 输入框`class="dwz-clipboard"`使用，用于解决 apicloud config.xml 没有 allowEdit 配制，安卓下不能粘贴问题
 
 > ## 更多模块
 

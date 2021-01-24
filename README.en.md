@@ -1,3 +1,5 @@
+# DWZ Mobile 介绍
+
 > ## 概述
 
 - DWZ 手机版 HTML5 + 原生 混合开发框架。
@@ -47,7 +49,7 @@ git clone https://gitee.com/dwzteam/dwz_mobile_app.git
 
 ### 4. 打包发布
 
-- [Android & iOS 云编译文档](/doc/apicloud/package?id=云编译)
+- [Android & iOS 云打包文档](/doc/apicloud/package?id=云编译)
 - [Android & iOS 发布和版本更新提示文档](/doc/apicloud/package?id=发布和版本更新)
 
 > ## 联系

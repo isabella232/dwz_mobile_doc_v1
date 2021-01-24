@@ -1,3 +1,7 @@
+# 打包发布
+
+App 打包发布 iOS & Android
+
 > ## 真机调试
 
 1. 在 APICloud 控制台配制证书

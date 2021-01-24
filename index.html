@@ -9,7 +9,8 @@
 	<meta name="description" content="DWZ 移动端开发文档" />
 	<meta name="keywords" content="DWZ 移动端开发文档" />
 
-	<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+	<link rel="stylesheet" href="cdn/themes/vue.css">
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css"> -->
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css"> -->
 	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css"> -->
@@ -64,8 +65,8 @@
 				}
 			},
 			repo: 'https://gitee.com/dwzteam/dwz_mobile_doc_v1.git/',
-			// loadNavbar: true,
-			loadSidebar: true,
+			loadNavbar: true,
+			// loadSidebar: true,
 			maxLevel: 5,
 			subMaxLevel: 4,
 			auto2top: true,
@@ -101,22 +102,30 @@
 			}
 		}
 	</script>
-	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 	<script src="//unpkg.com/docsify-copy-code"></script>
-	<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script> -->
+	<script src="cdn/js/docsify.min.js"></script>
+	<script src="cdn/js/search.min.js"></script>
+	<script src="cdn/js/docsify-copy-code.min.js"></script>
+	<script src="cdn/js/emoji.js"></script>
 
 	<!-- 添加额外的语法支持需要通过CDN添加相应的语法文件, 默认支持：markup, html, xml, svg, mathml, ssml, atom, rss, css, clike, javascript, js -->
-	<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+	<!-- <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
 	<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
 	<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
-	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script> -->
+	<script src="cdn/js/prism-java.min.js"></script>
+	<script src="cdn/js/prism-bash.min.js"></script>
+	<script src="cdn/js/prism-php.min.js"></script>
+	<script src="cdn/js/prism-json.min.js"></script>
 
 	<!-- CDN files for docsify-katex 支持公式 -->
-	<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-	<!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-
+	<!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" /> -->
+	<script src="cdn/js/docsify-katex.js"></script>
+	<link rel="stylesheet" href="cdn/js/katex.min.css" />
 </body>
 
 </html>
