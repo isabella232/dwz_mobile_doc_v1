@@ -47,9 +47,16 @@
 </div>
 ```
 
+> ## tab-item 属性说明
+
+- 组件源码 `dwz.navTab.js`
+- tabid: 每个标签页 tabid 必须唯一
+- data-href: ajax 加载标签页 url
+- data-cache: 标签页缓存配制，默认为 false，为 true 时第二次打开标签页时不会重新加载
+
 > ## 组件 js 接口
 
-- init()
+### init() 初始化
 
 ```js
 $.navTab.init({
@@ -57,7 +64,7 @@ $.navTab.init({
 });
 ```
 
-- open()
+### open() 切换标签页
 
 ```js
 $.navTab.open({
@@ -65,9 +72,3 @@ $.navTab.open({
   url: "tpl/home.html?dwz_callback=biz.home.render", // 标签页url，dwz_callback是页面渲染回调函数，用于自定义加载页面和业务处理
 });
 ```
-
-> ## tab-item 参数说明
-
-- tabid: 每个标签页 tabid 必须唯一
-- data-href: ajax 加载标签页 url
-- data-cache: 标签页缓存配制，默认为 false，为 true 时第二次打开标签页时不会重新加载
