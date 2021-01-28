@@ -12,9 +12,23 @@
 - 安卓 Apk 安装测试版 `http://mobile.jui.org/apk/dwz_mobile_app.apk`
 - 视频演示 `http://mobile.jui.org/video/dwz_mobile.mp4`
 
-<video width="320" controls preload="none" poster="http://mobile.jui.org/video/dwz_mobile.png">
+> ## 效果展示
+
+![](./_media/h5/ui/1.jpg?height=360)
+![](./_media/h5/widget/dialog/1.jpg?height=360)
+![](./_media/h5/widget/alert/1.jpg?height=360)
+![](./_media/h5/widget/alert/2.jpg?height=360)
+![](./_media/h5/widget/form/1.jpg?height=360)
+![](./_media/h5/widget/form/2.jpg?height=360)
+![](./_media/h5/widget/form/3.jpg?height=360)
+![](./_media/h5/widget/form/4.jpg?height=360)
+![](./_media/h5/widget/form/5.jpg?height=360)
+![](./_media/apicloud/dwzBaiduFaceLive/2.jpg?height=360)
+![](./_media/apicloud/dwzBaiduFaceLive/3.jpg?height=360)
+
+<!-- <video height="360" controls preload="none" poster="http://mobile.jui.org/video/dwz_mobile.png">
     <source src="http://mobile.jui.org/video/dwz_mobile.mp4">
-</video>
+</video> -->
 
 > ## 设计思路
 

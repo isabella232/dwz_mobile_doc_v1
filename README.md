@@ -15,6 +15,9 @@
 > ## 效果展示
 
 ![](./_media/h5/ui/1.jpg?height=360)
+![](./_media/h5/widget/dialog/1.jpg?height=360)
+![](./_media/h5/widget/alert/1.jpg?height=360)
+![](./_media/h5/widget/alert/2.jpg?height=360)
 ![](./_media/h5/widget/form/1.jpg?height=360)
 ![](./_media/h5/widget/form/2.jpg?height=360)
 ![](./_media/h5/widget/form/3.jpg?height=360)
