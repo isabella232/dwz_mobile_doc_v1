@@ -1,4 +1,7 @@
-- [DWZ Mobile 介绍](README.md)
+- 指南
+
+  - [DWZ Mobile 介绍](README.md)
+  - [Quickstart](doc/Quickstart.md)
 
 - H5 组件
 
@@ -18,7 +21,7 @@
   - [DWZ Mobile 前端手册](doc/h5/dwz_manual.md)
   <!-- - [组件设计](doc/h5/widget/widget.md) -->
 
-- 原生 App 模块
+- 原生模块
 
   - [dwzBaiduFaceLive 人脸识别](doc/apicloud/dwzBaiduFaceLive.md)
   - [Apicloud 第三方原生模块示例](doc/apicloud/OtherModule.md)
