@@ -1,3 +1,5 @@
+# DWZ Mobile 使用技巧
+
 > ## 事件处理
 
 ### 绑定事件并传参数
@@ -91,7 +93,7 @@ const test2 = dwz.eavl("test1");
 test2();
 ```
 
-### navView, navTab 拦截器 dwz_interceptor
+### dwz_interceptor 请求拦截器
 
 ```html
 <a data-href="my.html?dwz_interceptor=checkLogin" target="navView" rel="my"
@@ -102,47 +104,46 @@ test2();
 ### 或者定义 dwz 全局拦截函数
 
 ```javascript
-dwz.urlInterceptor = function (url) {
+$.urlInterceptor = function (url) {
   // Todo
 };
 ```
 
-### navView 回调 testAjaxSuccess
+### dwz_callback 页面加载回调函数
 
 ```html
-<a
-  data-href="test.html?dwz_callback=testAjaxSuccess"
-  target="navView"
-  rel="test"
+<a href="test.html?dwz_callback=testPageRender" target="navView" rel="test"
   >test</a
 >
 ```
 
-```javascript
-function testAjaxSuccess(html) {
-  var $box = $(this);
-  $box.html(html).initUI();
+```js
+function testPageRender(html) {
+  this.html(html).initUI();
 }
 ```
 
-### navView 外部链接
+### dwz_helper 页面加载辅助函数
+
+dwz_helper 链接示例
 
 ```html
-<a data-href="http://baidu.com" target="navView" rel="test" data-external="true"
-  >test</a
->
+<a href="test.html?dwz_helper=script" target="navView" rel="test">test</a>
 ```
 
-### navTab 返回 Home navTab 页面 回调 home_render
+dwz_helper 页面内容示例
 
 ```html
-<a
-  class="bar-button"
-  data-href="home.html?dwz_callback=home_render"
-  target="navTab"
-  rel="home"
-  >test</a
->
+<div
+  class="dwz-calendar tb-line"
+  minDate="{%y-3}-%M-%d"
+  maxDate="%y-%M-{%d+3}"
+></div>
+<script type="text/javascript">
+  function helper(tpl, params) {
+    this.find(".dwz-calendar").calendar();
+  }
+</script>
 ```
 
 ### ajaxTodo 用于收藏、关注等操作
@@ -153,7 +154,7 @@ function testAjaxSuccess(html) {
 
 ### unitBox
 
-```javascript
+```js
 $box.parentsUnitBox();
 ```
 

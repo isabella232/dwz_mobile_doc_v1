@@ -4,6 +4,9 @@
 - 从右边滑入打开
 - 全屏卡片式布局，支持多个 navView 页面共享同一个显示空间，像重叠在一起的一幅扑克牌重叠在一起
 - 打开多个 navView 页面时，组件内部控制 z-index，显示最顶层页面
+- 支持 dwz_interceptor 请求拦截器，支持全局 dwz 全局拦截函数 $.urlInterceptor
+- 支持 dwz_callback 页面加载回调函数
+- 支持 dwz_helper 页面加载辅助函数
 
 > ## 基础用法
 
@@ -22,6 +25,10 @@
         rel:'driving'
     })"
   >导航</a
+>
+
+<a data-href="http://baidu.com" target="navView" rel="test" data-external="true"
+  >外部页面</a
 >
 ```
 

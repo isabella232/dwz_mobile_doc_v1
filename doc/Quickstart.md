@@ -4,6 +4,7 @@
 
 - node\^10.13.0 `https://nodejs.org/en/download`
 - npm\^6.14.5 `新版的nodejs已经集成了npm`
+- apicloud-cli\^0.2.0 `npm install -g apicloud-cli`
 
 > ## Step
 

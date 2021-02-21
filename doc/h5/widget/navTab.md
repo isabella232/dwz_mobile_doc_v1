@@ -2,6 +2,9 @@
 
 - App 底部导航标签组件
 - 整个 App 中只能有一个 navTab 组件，app 入口 index.html 中初始化
+- 支持 dwz_interceptor 请求拦截器，支持全局 dwz 全局拦截函数 $.urlInterceptor
+- 支持 dwz_callback 页面加载回调函数
+- 支持 dwz_helper 页面加载辅助函数
 
 > ## 基础用法
 
