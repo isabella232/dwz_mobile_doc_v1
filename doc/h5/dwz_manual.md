@@ -199,6 +199,7 @@ pattern=".{1,20}"
 
 [腾讯 art-template](https://github.com/aui/art-template)
 
+- https://aui.github.io/art-template/zh-cn/docs/
 - https://aui.github.io/art-template/docs/
 - https://blog.csdn.net/pupilxiaoming/article/details/77118855
 

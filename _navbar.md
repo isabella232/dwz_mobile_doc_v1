@@ -25,6 +25,7 @@
   - [slide 轮播](doc/h5/widget/slide.md)
   - [slideTab 轮播标签](doc/h5/widget/slideTab.md)
   - [marquee 滚动](doc/h5/widget/marquee.md)
+  - [scroll 滚动](doc/h5/widget/scroll.md)
 
   <!-- - [组件设计](doc/h5/widget/widget.md) -->
 
