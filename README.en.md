@@ -30,6 +30,10 @@
 ![](./_media/h5/widget/calendar/1.jpg?height=360)
 ![](./_media/h5/widget/calendar/2.jpg?height=360)
 ![](./_media/h5/widget/calendar/3.jpg?height=360)
+![](./_media/h5/widget/panel/1.jpg?height=360)
+![](./_media/h5/widget/button/1.jpg?height=360)
+![](./_media/h5/widget/icons/1.jpg?height=360)
+![](./_media/h5/widget/charts/1.jpg?height=360)
 
 <!-- <video height="360" controls preload="none" poster="http://mobile.jui.org/video/dwz_mobile.png">
     <source src="http://mobile.jui.org/video/dwz_mobile.mp4">

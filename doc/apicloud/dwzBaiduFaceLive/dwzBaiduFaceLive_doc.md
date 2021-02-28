@@ -1,7 +1,7 @@
-﻿/*
+﻿/_
 Title: dwzBaiduFaceLive
 Description: dwzBaiduFaceLive
-*/
+_/
 
 <p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
 
@@ -17,7 +17,7 @@ Description: dwzBaiduFaceLive
 
 为帮助用户更好更快的使用模块，维护了一个[示例](https://community.apicloud.com/bbs/forum.php?mod=viewthread&tid=169335)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
 
-[模块配套百度授权包配制](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
+[模块配套百度授权包配制](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive/doc)
 
 [git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
@@ -54,7 +54,7 @@ Description: dwzBaiduFaceLive
 
 请参考 License 打包模块包注意事项，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用。
 
-- [人脸识别模块配套授权包制作文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive)
+- [人脸识别模块配套授权包制作文档](http://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive/doc)
 - 注意 config.xml `<feature name="dwzBaiduFaceLive">` 节点中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
 
 <div id="a1"></div>
@@ -101,7 +101,7 @@ module.faceLiveness(
     headLeft: false, // 活体动作，向左转头(默认:false)
     headUp: false, // 活体动作，向上抬头(默认:false)
     headDown: false, // 活体动作，向下低头(默认:false)
-    headLeftOrRight: false // 活体动作，摇头(默认:false)
+    headLeftOrRight: false, // 活体动作，摇头(默认:false)
   },
   function (ret, err) {
     alert(JSON.stringify(ret));
@@ -152,7 +152,7 @@ module.faceDetect(
     debug: 0, // 调试开关(默认:0)：0, 1
     cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
     cropHeight: 300, // // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70 // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
   },
   function (ret, err) {
     alert(JSON.stringify(ret));
