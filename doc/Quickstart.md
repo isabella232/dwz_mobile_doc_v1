@@ -16,6 +16,7 @@ git clone https://gitee.com/dwzteam/dwz_mobile_app.git
 
 ### 2. 开发环境 Chrome 中运行
 
+- 命令行中进入项目 `cd dwz_mobile_app`
 - 第一次运行，需要初始化工程 `npm intall`
 - 前端开发模式运行，会自动打开 chrome `npm run dev`
   ![](./_media/readme/app_chrome_dev.jpg)

@@ -11,7 +11,7 @@
 
 - 在线演示版，使用 chrome 开发模式设置手机版 `http://mobile.jui.org`
 - 安卓测试版 `http://mobile.jui.org/apk/dwz_mobile_app.apk`
-- 苹果测试版，App Store 审核通过这类开源框架示例 App 应用，开发都可以下载源码后使用 apicloud [云编译 iOS 版](/doc/apicloud/package?id=云编译)
+- 苹果测试版，App Store 审核通过开源框架示例 App 应用，开发都可以下载源码后使用 apicloud [云编译 iOS 版](/doc/apicloud/package?id=云编译)
 - 视频演示 `http://mobile.jui.org/video/dwz_mobile.mp4`
 
 > ## 效果展示
@@ -20,6 +20,7 @@
 ![](./_media/apicloud/dwzBaiduFaceLive/2.jpg?height=360)
 ![](./_media/apicloud/dwzBaiduFaceLive/3.jpg?height=360)
 ![](./_media/h5/widget/form/1.jpg?height=360)
+![](./_media/h5/widget/form/1-1.jpg?height=360)
 ![](./_media/h5/widget/form/2.jpg?height=360)
 ![](./_media/h5/widget/form/3.jpg?height=360)
 ![](./_media/h5/widget/form/4.jpg?height=360)
