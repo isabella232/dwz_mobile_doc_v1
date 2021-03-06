@@ -14,14 +14,14 @@
 
 > ## 效果展示
 
-![](../../_media/apicloud/dwzBaiduFaceLive/1.jpg?height=360)
-![](../../_media/apicloud/dwzBaiduFaceLive/2.jpg?height=360)
-![](../../_media/apicloud/dwzBaiduFaceLive/3.jpg?height=360)
+![](../../../_media/apicloud/dwzBaiduFaceLive/1.jpg?height=360)
+![](../../../_media/apicloud/dwzBaiduFaceLive/2.jpg?height=360)
+![](../../../_media/apicloud/dwzBaiduFaceLive/3.jpg?height=360)
 
 > ## 模块使用攻略
 
 1. 使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。[百度开发平台控制台](https://console.bce.baidu.com/ai/#/ai/face/overview/index)
-   ![](../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
+   ![](../../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
 2. License 文件打包模块包需注意事项请参考 [模块配套授权包制作](/doc/apicloud/dwzBaiduFaceLive/doc?id=模块配套授权包制作)，然后将制作好的授权模块包上传到自定义模块，添加到自己的 App 进行使用
 3. APICloud 模块市场搜索 dwzBaiduFaceLive，增加到 APICloud 工程中
 4. 使用此模块之前先配置 config.xml 文件，配置完毕后，需通过云端编译生效，配置方法如下：
@@ -36,7 +36,7 @@
 ```
 
 - 注意 config.xml `<feature name="dwzBaiduFaceLive">` 节点中的 `LicenseID_iOS` 对应百度 `iOS License ID`，`LicenseID_Android` 对应百度 `安卓 License ID`
-  ![](../../_media/apicloud/dwzBaiduFaceLive/12.jpg)
+  ![](../../../_media/apicloud/dwzBaiduFaceLive/12.jpg)
 
 5. [自定义 Loader 编译，真机调试](/doc/apicloud/package?id=真机调试)或者[云编译测试版](/doc/apicloud/package?id=云编译)
 6. 代码调用
@@ -133,7 +133,7 @@ jar -cvf dwzBaiduFaceLiveLicense.jar ./*
 
 5. 将`zip/android/dwzBaiduFaceLiveLicense` 文件夹压缩为 `dwzBaiduFaceLiveLicense.zip`, 需要包含一层模块目录
 
-![](../../_media/apicloud/dwzBaiduFaceLive/jar.jpg)
+![](../../../_media/apicloud/dwzBaiduFaceLive/jar.jpg)
 
 ### iOS 授权包
 
@@ -144,4 +144,4 @@ jar -cvf dwzBaiduFaceLiveLicense.jar ./*
 
 1. 登录 APICloud，进入一个 App 管理界面
 2. 点击 App 管理界面中的 模块 -> 自定义模块 -> 上传自定义模块
-   ![](../../_media/apicloud/dwzBaiduFaceLive/21.jpg)
+   ![](../../../_media/apicloud/dwzBaiduFaceLive/21.jpg)
