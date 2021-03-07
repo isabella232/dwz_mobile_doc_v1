@@ -19,7 +19,7 @@
 >
 
 <a
-  href="javascript:$.navView.open({
+  onclick="$.navView.open({
         url:'tpl/transport/driving.html?dwz_callback=biz.transport.drivingRender', 
         data:{name: '杭州大前端网络技术工作室',address: '杭州余杭区文一西路1218号',lng: 20.005807, lat: 30.278029},
         rel:'driving'
@@ -42,6 +42,8 @@
 - url: 必填，html 页面路径
 - type: 非必填，默认`GET`，取值范围 `GET, POST`
 - data: 非必填，默认空对象
+- wipeClose: 支持向右滑动返回，默认 false,
+- external: iframe 打开外部页面，默认 false
 - interceptor: 拦截器如果存在，并返回 false 时 open 失效
 - callback: 回调函数如果存在，加载完页面执行回调函数
 

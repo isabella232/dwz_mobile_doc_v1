@@ -156,6 +156,7 @@ dwz_helper 页面内容示例
 
 ```js
 $box.parentsUnitBox();
+$box.parentsUnitBox("myClass");
 ```
 
 ### parentsUntil
@@ -166,33 +167,10 @@ $box.parentsUntil(function () {
 });
 ```
 
-### 下拉菜单联动
+### parentsByTag
 
-```html
-<select
-  name="test"
-  class="toggleSelectRef"
-  data-ref-box="#toggleSelectRef_test1|#toggleSelectRef_test2"
-  data-ctr-show="true"
-  data-ref-val="1,3|2,3"
->
-  <option value="1">显示1</option>
-  <option value="2">显示2</option>
-  <option value="3">显示1，2</option>
-  <option value="4">全部不显示</option>
-</select>
-<div id="toggleSelectRef_test1">
-  # 下拉菜单联动控制局部box显示隐藏, class="toggleSelectRef" [data-ref-box]
-  [data-ref-val] [data-ctr-show] 可选，默认控制隐藏，为true时控制显示
-</div>
-<div id="toggleSelectRef_test2">test2</div>
-```
-
-### 表单验证 input 中文验证
-
-```
-pattern="[\u4e00-\u9fa5]{1,20}"
-pattern=".{1,20}"
+```javascript
+$box.parentsByTag("form");
 ```
 
 > ## JS 模版
