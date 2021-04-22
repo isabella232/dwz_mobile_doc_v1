@@ -30,8 +30,9 @@ nativeplugins/dwzBaiduFaceLive/android/assets/idl-license.face-android
 nativeplugins/dwzBaiduFaceLive/ios/idl-license.face-ios
 ```
 
-3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwzBaiduFaceLive
-4. HBuilderX 中加入原生插件 dwzBaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwz-BaiduFaceLive
+   ![](../../../_media/dcloud/dwzBaiduFaceLive/conf-1.jpg)
+4. HBuilderX 中加入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
 5. 配制自定义基座打包，注意 App 包名、证书和百度 AI 平台证书一致
 6. 代码调用
 

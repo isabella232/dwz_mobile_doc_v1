@@ -32,7 +32,7 @@
 
 ## **License 百度 AI 平台证书文件配制注意事项**
 
-HBuilderX 中加入原生插件 dwzBaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+HBuilderX 中加入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
 
 <div id="a1"></div>
 
