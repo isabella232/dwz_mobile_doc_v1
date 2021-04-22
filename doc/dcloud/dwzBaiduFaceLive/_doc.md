@@ -12,21 +12,21 @@
 
 为帮助用户更好更快的使用插件，维护了一个[示例](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
 
-[模块配套百度授权包配制](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)
+[插件配套百度授权包配制](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)
 
 [git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
 # **概述**
 
-**dwzBaiduFaceLive 模块概述**
+**dwz-BaiduFaceLive 插件概述**
 
-本模块封装了新版百度开放平台的人脸识别客户端 SDK(活体检测)，支持活体识别和普通识别 2 种方式。
+本插件封装了新版百度开放平台的人脸识别客户端 SDK(活体检测)，支持活体识别和普通识别 2 种方式。
 支持人脸识别截取头像，支持人脸图片分辨率设置、压缩比设置，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题。
 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面。
 
-**不能同时使用的模块：其它百度人脸识别模块**
+**不能同时使用的插件：其它百度人脸识别插件**
 
-**模块使用攻略**
+**插件使用攻略**
 
 使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。百度 AI 开放平台接入流程参考[百度 AI 开放平台](https://console.bce.baidu.com/ai/?_=1524383952610#/ai/face/overview/index)
 
@@ -65,7 +65,7 @@ err：
 ## 示例代码
 
 ```js
-const module = uni.requireNativePlugin("dwzBaiduFaceLive");
+const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -122,7 +122,7 @@ err：
 ## 示例代码
 
 ```js
-const module = uni.requireNativePlugin("dwzBaiduFaceLive");
+const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
 module.faceDetect(
   {
     debug: 0, // 调试开关(默认:0)：0, 1

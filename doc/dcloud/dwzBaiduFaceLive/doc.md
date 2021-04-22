@@ -1,4 +1,4 @@
-# dwzBaiduFaceLive 人脸识别【dcloud】
+# dwz-BaiduFaceLive 人脸识别【dcloud】
 
 > ## 功能介绍
 
@@ -12,6 +12,11 @@
 - 可以免费从百度 AI 平台获取人脸采集证书
 - 跨平台支持（Android & iOS）
 - [dwzBaiduFaceLive【apicloud】版本](/doc/apicloud/dwzBaiduFaceLive/doc.md)
+- **插件使用含技术支持，远程协助调试插件请加微信沟通**
+
+|                   技术服务微信                   |
+| :----------------------------------------------: |
+| ![](../../../_media/readme/wx_zhh.jpg?width=200) |
 
 > ## 效果展示
 
@@ -25,16 +30,18 @@
    ![](../../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
 2. 百度 AI 平台人脸采集 License 文件放到 HBuilderX 工程目录中
 
+   ![](../../../_media/dcloud/dwzBaiduFaceLive/nativeplugins-1.jpg?width=300)
+
 ```
-nativeplugins/dwzBaiduFaceLive/android/assets/idl-license.face-android
-nativeplugins/dwzBaiduFaceLive/ios/idl-license.face-ios
+nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android
+nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios
 ```
 
 3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwz-BaiduFaceLive
-   ![](../../../_media/dcloud/dwzBaiduFaceLive/conf-1.jpg)
 4. HBuilderX 中加入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+   ![](../../../_media/dcloud/dwzBaiduFaceLive/conf-1.jpg)
 5. 配制自定义基座打包，注意 App 包名、证书和百度 AI 平台证书一致
-6. 代码调用
+6. 前端代码调用插件
 
 <div id="a1"></div>
 
@@ -43,7 +50,7 @@ nativeplugins/dwzBaiduFaceLive/ios/idl-license.face-ios
 活体参数可配制，至少需要配制一个活体动作
 
 ```js
-const module = uni.requireNativePlugin("dwzBaiduFaceLive");
+const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -68,7 +75,7 @@ module.faceLiveness(
 > 不包含活体动作调用
 
 ```js
-const module = uni.requireNativePlugin("dwzBaiduFaceLive");
+const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
 module.faceDetect(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -82,7 +89,7 @@ module.faceDetect(
 );
 ```
 
-> 回调 callback(ret, err)
+> 回调 callback(ret)
 
 ret：
 
@@ -96,8 +103,3 @@ ret：
   "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
 }
 ```
-
-err：
-
-- 类型：JSON 对象
-- 内部字段：没有用到

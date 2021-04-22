@@ -13,6 +13,11 @@
 - 跨平台支持（Android & iOS）
 - [dwzBaiduFaceLive 模块前端调用示例 biz.faceBaidu.js](https://github.com/dwzteam/dwz_mobile_app/blob/master/widget/js/biz.baiduFace.js)
 - [dwzBaiduFaceLive【dcloud】版本](/doc/dcloud/dwzBaiduFaceLive/doc.md)
+- **模块使用含技术支持，远程协助调试模块请加微信沟通**
+
+|                   技术服务微信                   |
+| :----------------------------------------------: |
+| ![](../../../_media/readme/wx_zhh.jpg?width=200) |
 
 > ## 效果展示
 
@@ -89,7 +94,7 @@ module.faceDetect(
 );
 ```
 
-> 回调 callback(ret, err)
+> 回调 callback(ret)
 
 ret：
 
@@ -103,11 +108,6 @@ ret：
   "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
 }
 ```
-
-err：
-
-- 类型：JSON 对象
-- 内部字段：没有用到
 
 > ## 模块配套授权包制作
 

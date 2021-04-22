@@ -1,4 +1,4 @@
-# Apicloud 第三方原生模块示例
+# apicloud 第三方原生模块示例
 
 > ## mam 模块
 
