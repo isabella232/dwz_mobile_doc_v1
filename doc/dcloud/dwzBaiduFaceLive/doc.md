@@ -1,4 +1,6 @@
-# dwz-BaiduFaceLive 人脸识别【dcloud】
+# dwz-BaiduFaceLive 人脸识别
+
+DWZ 百度人脸识别插件【dcloud】
 
 > ## 功能介绍
 
