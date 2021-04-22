@@ -29,12 +29,19 @@
 
   <!-- - [组件设计](doc/h5/widget/widget.md) -->
 
-- 原生模块
+- apicloud 模块
 
   - [dwzBaiduFaceLive 人脸识别](doc/apicloud/dwzBaiduFaceLive/doc.md)
   - [Apicloud 第三方原生模块示例](doc/apicloud/OtherModule.md)
 
-- [打包发布](doc/apicloud/package.md)
+- dcloud 插件
+
+  - [dwzBaiduFaceLive 人脸识别](doc/dcloud/dwzBaiduFaceLive/doc.md)
+
+- 打包发布
+
+  - [apicloud 打包](doc/apicloud/package.md)
+  - [dcloud 打包](doc/dcloud/package.md)
 
 - 其它
 

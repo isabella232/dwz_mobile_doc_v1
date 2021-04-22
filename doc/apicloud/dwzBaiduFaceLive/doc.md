@@ -1,16 +1,18 @@
-# dwzBaiduFaceLive 人脸识别
+# dwzBaiduFaceLive 人脸识别【apicloud】
 
 > ## 功能介绍
 
-- 本模块封装了新版百度开放平台的人脸识别采集 SDK(活体检测)，包含 2 个接口：
+- 本模块封装了新版百度开放平台的人脸识别采集 SDK：
   - 包含活体动作 [faceLiveness](#a1)
   - 不包含活体动作 [faceDetect](#a2)
-- 人脸识别后可以精准截取头像，人脸抠图支持图片压缩比设定，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题
+- 考虑灵活度问题，本模块只作人脸采集，人脸识别成功后生成 base64 头像图片，开发者可以配合服自己的务端接口实现具体的业务需求，如（实名认证、人脸识别登录、人脸识别备案等）
+- 人脸识别后自动截取头像，人脸抠图支持压缩比设定，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题
 - 人脸识别抠图分辨率可配制 高度 50~1200 像素，抠图高的设定，宽度模块内部计算（宽度=高度\*3/4）
 - 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面
 - 可以免费从百度 AI 平台获取人脸采集证书
-- HTML5 跨平台支持（Android & iOS）
+- 跨平台支持（Android & iOS）
 - [dwzBaiduFaceLive 模块前端调用示例 biz.faceBaidu.js](https://github.com/dwzteam/dwz_mobile_app/blob/master/widget/js/biz.baiduFace.js)
+- [dwzBaiduFaceLive【dcloud】版本](/doc/dcloud/dwzBaiduFaceLive/doc.md)
 
 > ## 效果展示
 
@@ -18,7 +20,7 @@
 ![](../../../_media/apicloud/dwzBaiduFaceLive/2.jpg?height=360)
 ![](../../../_media/apicloud/dwzBaiduFaceLive/3.jpg?height=360)
 
-> ## 模块使用攻略
+> ## 使用攻略
 
 1. 使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。[百度开发平台控制台](https://console.bce.baidu.com/ai/#/ai/face/overview/index)
    ![](../../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
@@ -48,7 +50,7 @@
 活体参数可配制，至少需要配制一个活体动作
 
 ```js
-var module = api.require("dwzBaiduFaceLive");
+const module = api.require("dwzBaiduFaceLive");
 module.faceLiveness(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -61,10 +63,9 @@ module.faceLiveness(
     headLeft: false, // 活体动作，向左转头(默认:false)
     headUp: false, // 活体动作，向上抬头(默认:false)
     headDown: false, // 活体动作，向下低头(默认:false)
-    headLeftOrRight: false, // 活体动作，摇头(默认:false)
   },
-  function (ret, err) {
-    alert(JSON.stringify(ret));
+  (ret) => {
+    console.log(JSON.stringify(ret));
   }
 );
 ```
@@ -74,7 +75,7 @@ module.faceLiveness(
 > 不包含活体动作调用
 
 ```js
-var module = api.require("dwzBaiduFaceLive");
+const module = api.require("dwzBaiduFaceLive");
 module.faceDetect(
   {
     debug: 0, // 调试开关(默认:0)：0, 1
@@ -82,8 +83,8 @@ module.faceDetect(
     cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
     quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
   },
-  function (ret, err) {
-    alert(JSON.stringify(ret));
+  (ret) => {
+    JSON.stringify(ret);
   }
 );
 ```

@@ -146,7 +146,7 @@
 </form>
 ```
 
-> ## 下拉菜单联动
+> ## 下拉联动
 
 ```html
 <select
@@ -339,7 +339,7 @@
 </div>
 ```
 
-> ## 关联查询
+> ## 查找带回
 
 ```html
 <div class="form-item">
@@ -409,7 +409,7 @@
 - validateCallback(form, callback) 方法接收 2 个参数
   - 第 1 个参数是当前表单 form 对象，第 2 个参数是 ajax 请求完成后的回调函数
 
-### 表单提交回调
+### ajax 提交回调
 
 - 框架提供了几个默认的 form 提交回调，也可以自己写 form 提交回调
 - navViewAjaxDone(json)

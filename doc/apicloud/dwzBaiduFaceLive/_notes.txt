@@ -12,3 +12,8 @@
 # dwzBaiduFaceLive 模块 1.0.2 版本更新 note：
 
 1. 修复安卓版非活体识别图片压缩参数无效问题
+
+# dwzBaiduFaceLive 模块 1.0.3 版本更新 note：
+
+1. 百度人脸离线采集SDK升级到最新4.1版本
+2. 提升人脸识别准确率
