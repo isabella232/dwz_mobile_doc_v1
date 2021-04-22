@@ -1,62 +1,47 @@
 ﻿<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile</p>
 
-<div class="outline">
-
-[faceLiveness](#a1)
-
-[faceDetect](#a2)
-
-</div>
-
-# **示例**
-
-为帮助用户更好更快的使用插件，维护了一个[示例](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
-
-[插件配套百度授权包配制](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)
-
-[git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
-
 # **概述**
 
 **dwz-BaiduFaceLive 插件概述**
 
-本插件封装了新版百度开放平台的人脸识别客户端 SDK(活体检测)，支持活体识别和普通识别 2 种方式。
-支持人脸识别截取头像，支持人脸图片分辨率设置、压缩比设置，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题。
-人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面。
-插件使用含技术支持，远程协助调试插件请加微信沟通
-
-- 本插件封装了新版百度开放平台的人脸识别采集 SDK
+- 封装了新版百度开放平台的人脸识别采集 SDK
+  - 包含活体动作 `faceLiveness()`
+  - 不包含活体动作 `faceDetect()`
 - 考虑灵活度问题，本插件只作人脸采集，人脸识别成功后生成 base64 头像图片，开发者可以配合自己的服务端接口实现具体的业务需求，如（实名认证、刷脸登录、人脸识别备案等）
 - 人脸识别后自动截取头像，人脸抠图支持压缩比设定，从而解决了某些第三方实名认证接口图像大小不能超过 20K 的问题
 - 人脸识别抠图分辨率可配制 高度 50~1200 像素，抠图高的设定，根据高度自动计算宽度（宽度=高度\*3/4）
 - 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面
 - 可以免费从百度 AI 平台获取人脸采集证书，本插件针对一个 APP **一次购买永久使用**
-- 跨平台支持（Android & iOS）
-- [dwzBaiduFaceLive【apicloud】版本](/doc/apicloud/dwzBaiduFaceLive/doc.md)
+- 跨平台支持（Android & iOS）iOS 端与 Android 端 JS 接口保持一致
+- 接口支持 debug 参数设置，方便排查百度证书配制相关问题
 - **插件使用含技术支持，远程协助调试插件请加微信沟通 17767167745**
 
-**插件使用攻略**
+# **对接步骤**
 
-使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。百度 AI 开放平台接入流程参考[百度 AI 开放平台](https://console.bce.baidu.com/ai/?_=1524383952610#/ai/face/overview/index)
+为帮助用户更好更快的使用插件，点击查看[dwz-BaiduFaceLive 插件详细文档](https://dwzteam.gitee.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc)，包含示例代码、知识点讲解、注意事项等，供您参考。
 
-## **License 百度 AI 平台证书文件配制注意事项**
+1. 使用之前须从百度开放平台申请开发者账号并完成企业认证，获取 LicenseID 和 LicenseFileName。[百度开发平台控制台](https://console.bce.baidu.com/ai/#/ai/face/overview/index)
+   ![](https://dwzteam.gitee.io/dwz_mobile_doc_v1/_media/apicloud/dwzBaiduFaceLive/11.jpg)
+2. 百度 AI 平台人脸采集 License 文件放到 HBuilderX 工程目录中
 
-HBuilderX 中加入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+- iOS 百度证书：`nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android`
+- 安卓百度证书：`nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios`
 
-<div id="a1"></div>
+3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwz-BaiduFaceLive
+4. HBuilderX 工程引入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+   ![](https://dwzteam.gitee.io/dwz_mobile_doc_v1/_media/dcloud/dwzBaiduFaceLive/conf-1.jpg)
+5. 配制自定义基座打包，注意 App 包名、证书和百度 AI 平台证书一致
+6. 前端代码调用插件
 
-# **faceLiveness**
+# **JS 接口说明**
+
+## faceLiveness(options, callback)
 
 包含活体动作人脸识别，活体参数可配制，至少需要配制一个活体动作
 
-faceLiveness({cropType: 1, cropHeight: 300, quality: 70, eye: true}, callback(ret, err){})
+### options 参数说明见`示例代码`
 
-## callback(ret)
-
-ret：
-
-- 类型：JSON 对象
-- 内部字段：
+### callback(ret)
 
 ```json
 {
@@ -66,12 +51,7 @@ ret：
 }
 ```
 
-err：
-
-- 类型：JSON 对象
-- 内部字段：没用到
-
-## 示例代码
+### 示例代码
 
 ```js
 const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
@@ -94,26 +74,17 @@ module.faceLiveness(
 );
 ```
 
-## 可用性
+### 可用性
 
 iOS 系统，Android 系统
 
-可提供的 1.0.0 及更高版本
-
-<div id="a2"></div>
-
-# **faceDetect**
+## faceDetect(options, callback)
 
 不包含活体动作人脸识别
 
-faceDetect({cropType: 1, cropHeight: 300, quality: 70}, callback(ret, err){})
+### options 参数说明见`示例代码`
 
-## callback(ret)
-
-ret：
-
-- 类型：JSON 对象
-- 内部字段：
+### callback(ret)
 
 ```json
 {
@@ -123,12 +94,7 @@ ret：
 }
 ```
 
-err：
-
-- 类型：JSON 对象
-- 内部字段：没用到
-
-## 示例代码
+### 示例代码
 
 ```js
 const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
@@ -145,8 +111,6 @@ module.faceDetect(
 );
 ```
 
-## 可用性
+### 可用性
 
 iOS 系统，Android 系统
-
-可提供的 1.0.0 及更高版本

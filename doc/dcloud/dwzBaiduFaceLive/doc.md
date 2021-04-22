@@ -5,7 +5,7 @@ DWZ 百度人脸识别插件【dcloud】
 > ## 功能介绍
 
 - https://ext.dcloud.net.cn/plugin?id=4794
-- 本插件封装了新版百度开放平台的人脸识别采集 SDK：
+- 封装了新版百度开放平台的人脸识别采集 SDK：
   - 包含活体动作 [faceLiveness](#a1)
   - 不包含活体动作 [faceDetect](#a2)
 - 考虑灵活度问题，本插件只作人脸采集，人脸识别成功后生成 base64 头像图片，开发者可以配合自己的服务端接口实现具体的业务需求，如（实名认证、刷脸登录、人脸识别备案等）
@@ -13,7 +13,8 @@ DWZ 百度人脸识别插件【dcloud】
 - 人脸识别抠图分辨率可配制 高度 50~1200 像素，抠图高的设定，根据高度自动计算宽度（宽度=高度\*3/4）
 - 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面
 - 可以免费从百度 AI 平台获取人脸采集证书，本插件针对一个 APP **一次购买永久使用**
-- 跨平台支持（Android & iOS）
+- 跨平台支持（Android & iOS）iOS 端与 Android 端 JS 接口保持一致
+- 接口支持 debug 参数设置，方便排查百度证书配制相关问题
 - [dwzBaiduFaceLive【apicloud】版本](/doc/apicloud/dwzBaiduFaceLive/doc.md)
 - **插件使用含技术支持，远程协助调试插件请加微信沟通**
 
@@ -33,15 +34,11 @@ DWZ 百度人脸识别插件【dcloud】
    ![](../../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
 2. 百度 AI 平台人脸采集 License 文件放到 HBuilderX 工程目录中
 
-   ![](../../../_media/dcloud/dwzBaiduFaceLive/nativeplugins-1.jpg?width=300)
-
-```
-nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android
-nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios
-```
+- iOS 百度证书：`nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android`
+- 安卓百度证书：`nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios`
 
 3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwz-BaiduFaceLive
-4. HBuilderX 中加入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
+4. HBuilderX 工程引入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
    ![](../../../_media/dcloud/dwzBaiduFaceLive/conf-1.jpg)
 5. 配制自定义基座打包，注意 App 包名、证书和百度 AI 平台证书一致
 6. 前端代码调用插件

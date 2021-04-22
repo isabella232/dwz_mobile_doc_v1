@@ -5,7 +5,7 @@ DWZ 百度人脸识别模块【apicloud】
 > ## 功能介绍
 
 - https://www.apicloud.com/mod_detail/dwzBaiduFaceLive
-- 本模块封装了新版百度开放平台的人脸识别采集 SDK：
+- 封装了新版百度开放平台的人脸识别采集 SDK：
   - 包含活体动作 [faceLiveness](#a1)
   - 不包含活体动作 [faceDetect](#a2)
 - 考虑灵活度问题，本模块只作人脸采集，人脸识别成功后生成 base64 头像图片，开发者可以配合自己的服务端接口实现具体的业务需求，如（实名认证、刷脸登录、人脸识别备案等）
@@ -13,7 +13,8 @@ DWZ 百度人脸识别模块【apicloud】
 - 人脸识别抠图分辨率可配制 高度 50~1200 像素，抠图高的设定，根据高度自动计算宽度（宽度=高度\*3/4）
 - 人脸识别界面自带返回键，使用过程中随时可以退出人脸识别界面
 - 可以免费从百度 AI 平台获取人脸采集证书，本模块针对一个 APP **一次购买永久使用**
-- 跨平台支持（Android & iOS）
+- 跨平台支持（Android & iOS）iOS 端与 Android 端 JS 接口保持一致
+- 接口支持 debug 参数设置，方便排查百度证书配制相关问题
 - [dwzBaiduFaceLive 模块前端调用示例 biz.faceBaidu.js](https://github.com/dwzteam/dwz_mobile_app/blob/master/widget/js/biz.baiduFace.js)
 - [dwzBaiduFaceLive【dcloud】版本](/doc/dcloud/dwzBaiduFaceLive/doc.md)
 - **模块使用含技术支持，远程协助调试模块请加微信沟通**
