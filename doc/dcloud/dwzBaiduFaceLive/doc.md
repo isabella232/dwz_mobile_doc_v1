@@ -34,8 +34,8 @@ DWZ 百度人脸识别插件【dcloud】
    ![](../../../_media/apicloud/dwzBaiduFaceLive/11.jpg)
 2. 百度 AI 平台人脸采集 License 文件放到 HBuilderX 工程目录中
 
-- iOS 百度证书：`nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android`
-- 安卓百度证书：`nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios`
+- iOS 百度证书：`/nativeplugins/dwz-BaiduFaceLive/android/assets/idl-license.face-android`
+- 安卓百度证书：`/nativeplugins/dwz-BaiduFaceLive/ios/idl-license.face-ios`
 
 3. HBuilderX 工程 manifest.json --> App 原生配制 --> 选择云端插件 --> 插件市场找到 dwz-BaiduFaceLive
 4. HBuilderX 工程引入原生插件 dwz-BaiduFaceLive 后，插件面板上填写 LicenseID_Android、LicenseID_iOS
