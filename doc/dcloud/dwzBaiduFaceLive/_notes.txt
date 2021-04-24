@@ -1,5 +1,4 @@
 # dwz-BaiduFaceLive v1.0.0
 
-1. dwz-BaiduFaceLive 插件第一版发布
-2. 百度人脸离线采集SDK升级到最新4.1版本
+百度人脸离线采集SDK升级到最新4.1版本
 

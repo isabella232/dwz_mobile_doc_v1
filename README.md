@@ -57,7 +57,7 @@
 
 |               技术服务微信                |
 | :---------------------------------------: |
-| ![](./_media/readme/wx_zhh.jpg?width=200) |
+| ![](./_media/readme/wx_zhh.png?width=200) |
 
 > ## 捐助
 
