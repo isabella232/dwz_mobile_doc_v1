@@ -18,7 +18,7 @@ DWZ 百度人脸识别插件【dcloud】
 - [dwzBaiduFaceLive【apicloud】版本](/doc/apicloud/dwzBaiduFaceLive/doc.md)
 - **插件使用含技术支持，远程协助调试插件请加微信沟通**
 
-|                   安卓 APK 安装包                    |                   技术服务微信                   |
+|                   安卓 APK 测试包                    |                   技术服务微信                   |
 | :--------------------------------------------------: | :----------------------------------------------: |
 | ![](../../../_media/readme/qrcode_apk.png?width=200) | ![](../../../_media/readme/wx_zhh.png?width=200) |
 
