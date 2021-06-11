@@ -16,9 +16,9 @@
 - 接口支持 debug 参数设置，方便排查百度证书配制相关问题
 - **插件使用含技术支持，远程协助调试插件请加 QQ 350863780**
 
-|                                     安卓 APK 测试包                                     |                                    技术服务微信                                     |
-| :-------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-| ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/qrcode_apk.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
+|                                      安卓 APK 测试包                                      |                                    技术服务微信                                     |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/app_download.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
 
 为帮助用户更好更快的使用插件，点击查看 <a href="https://dwzteam.github.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc" target="_blank"><b>dwz-BaiduFaceLive 插件详细对接文档</b></a>，包含示例代码、知识点讲解、注意事项等，供您参考。
 

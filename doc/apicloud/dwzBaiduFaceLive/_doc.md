@@ -21,9 +21,9 @@ Description: dwzBaiduFaceLive
 
 [git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
-|                                     安卓 APK 测试包                                     |                                    技术服务微信                                     |
-| :-------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-| ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/qrcode_apk.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
+|                                      安卓 APK 测试包                                      |                                    技术服务微信                                     |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/app_download.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
 
 # **概述**
 
