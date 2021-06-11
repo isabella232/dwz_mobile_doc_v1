@@ -1,4 +1,4 @@
-# dwzVolcWebImage 图片服务
+# dwzBytedanceImageX 图片服务
 
 > ## 功能介绍
 

@@ -1,17 +1,17 @@
 {
-  "name": "dwz_mobile_doc_v1",
-  "version": "1.0.0",
-  "description": "DWZ Mobile框架文档",
-  "main": "index.js",
-  "scripts": {
-    "serve": "docsify serve ./",
-    "dev": "npm run serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@gitee.com:dwzteam/dwz_mobile_doc_v1.git"
-  },
-  "author": "zhanghuihua",
-  "license": "Apache2.0"
+	"name": "dwz_mobile_doc_v1",
+	"version": "1.0.0",
+	"description": "DWZ Mobile框架文档",
+	"main": "index.js",
+	"scripts": {
+		"serve": "docsify serve ./",
+		"dev": "npm run serve",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@gitee.com:dwzteam/dwz_mobile_doc_v1.git"
+	},
+	"author": "zhanghuihua",
+	"license": "Apache2.0"
 }

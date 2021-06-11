@@ -1,7 +1,7 @@
-﻿/\_
+﻿/**
 Title: dwzBaiduFaceLive
 Description: dwzBaiduFaceLive
-\_\_
+**/
 
 <p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBaiduFaceLive">立即使用</a></p>
 
@@ -78,9 +78,9 @@ ret：
 
 ```json
 {
-  "status": 1, //状态值（整数）；1||0，人脸识别成功/失败
-  "message": "错误提示", // 当status为0时返回错误信息
-  "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
+	"status": 1, //状态值（整数）；1||0，人脸识别成功/失败
+	"message": "错误提示", // 当status为0时返回错误信息
+	"face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
 }
 ```
 
@@ -92,23 +92,23 @@ err：
 ## 示例代码
 
 ```js
-var module = api.require("dwzBaiduFaceLive");
+var module = api.require('dwzBaiduFaceLive');
 module.faceLiveness(
-  {
-    debug: 0, // 调试开关(默认:0)：0, 1
-    cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
-    eye: true, // 活体动作，眨眼(默认:false)
-    mouth: false, // 活体动作，张嘴(默认:false)
-    headRight: false, // 活体动作，向右转头(默认:false)
-    headLeft: false, // 活体动作，向左转头(默认:false)
-    headUp: false, // 活体动作，向上抬头(默认:false)
-    headDown: false, // 活体动作，向下低头(默认:false)
-  },
-  function (ret, err) {
-    alert(JSON.stringify(ret));
-  }
+	{
+		debug: 0, // 调试开关(默认:0)：0, 1
+		cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+		cropHeight: 300, // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+		quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+		eye: true, // 活体动作，眨眼(默认:false)
+		mouth: false, // 活体动作，张嘴(默认:false)
+		headRight: false, // 活体动作，向右转头(默认:false)
+		headLeft: false, // 活体动作，向左转头(默认:false)
+		headUp: false, // 活体动作，向上抬头(默认:false)
+		headDown: false // 活体动作，向下低头(默认:false)
+	},
+	function (ret, err) {
+		alert(JSON.stringify(ret));
+	}
 );
 ```
 
@@ -135,9 +135,9 @@ ret：
 
 ```json
 {
-  "status": 1, //状态值（整数）；1||0，人脸识别成功/失败
-  "message": "错误提示", // 当status为0时返回错误信息
-  "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
+	"status": 1, //状态值（整数）；1||0，人脸识别成功/失败
+	"message": "错误提示", // 当status为0时返回错误信息
+	"face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
 }
 ```
 
@@ -149,17 +149,17 @@ err：
 ## 示例代码
 
 ```js
-var module = api.require("dwzBaiduFaceLive");
+var module = api.require('dwzBaiduFaceLive');
 module.faceDetect(
-  {
-    debug: 0, // 调试开关(默认:0)：0, 1
-    cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
-  },
-  function (ret, err) {
-    alert(JSON.stringify(ret));
-  }
+	{
+		debug: 0, // 调试开关(默认:0)：0, 1
+		cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+		cropHeight: 300, // // 抠图高的设定，高宽比是4:3，宽度会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+		quality: 70 // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+	},
+	function (ret, err) {
+		alert(JSON.stringify(ret));
+	}
 );
 ```
 

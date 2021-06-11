@@ -50,23 +50,23 @@ DWZ 百度人脸识别插件【dcloud】
 活体参数可配制，至少需要配制一个活体动作
 
 ```js
-const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
+const module = uni.requireNativePlugin('dwz-BaiduFaceLive');
 module.faceLiveness(
-  {
-    debug: 0, // 调试开关(默认:0)：0, 1
-    cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
-    eye: true, // 活体动作，眨眼(默认:true)
-    mouth: false, // 活体动作，张嘴(默认:false)
-    headRight: false, // 活体动作，向右转头(默认:false)
-    headLeft: false, // 活体动作，向左转头(默认:false)
-    headUp: false, // 活体动作，向上抬头(默认:false)
-    headDown: false, // 活体动作，向下低头(默认:false)
-  },
-  (ret) => {
-    console.log(JSON.stringify(ret));
-  }
+	{
+		debug: 0, // 调试开关(默认:0)：0, 1
+		cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+		cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+		quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+		eye: true, // 活体动作，眨眼(默认:true)
+		mouth: false, // 活体动作，张嘴(默认:false)
+		headRight: false, // 活体动作，向右转头(默认:false)
+		headLeft: false, // 活体动作，向左转头(默认:false)
+		headUp: false, // 活体动作，向上抬头(默认:false)
+		headDown: false // 活体动作，向下低头(默认:false)
+	},
+	(ret) => {
+		console.log(JSON.stringify(ret));
+	}
 );
 ```
 
@@ -75,17 +75,17 @@ module.faceLiveness(
 > 不包含活体动作调用
 
 ```js
-const module = uni.requireNativePlugin("dwz-BaiduFaceLive");
+const module = uni.requireNativePlugin('dwz-BaiduFaceLive');
 module.faceDetect(
-  {
-    debug: 0, // 调试开关(默认:0)：0, 1
-    cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
-    cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
-    quality: 70, // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
-  },
-  (ret) => {
-    JSON.stringify(ret);
-  }
+	{
+		debug: 0, // 调试开关(默认:0)：0, 1
+		cropType: 1, // 抠图类型(默认:1)：1:脸部, 2:大头照, 3:头像+肩膀
+		cropHeight: 300, // 抠图高的设定，为了保证好的抠图效果，要求高宽比是4:3，所以会在内部进行计算，只需要传入高即可，取值范围50 ~ 1200，默认480
+		quality: 70 // 抠图压缩质量，取值范围 20 ~ 100，默认100不压缩
+	},
+	(ret) => {
+		JSON.stringify(ret);
+	}
 );
 ```
 
@@ -98,8 +98,8 @@ ret：
 
 ```json
 {
-  "status": 1, //状态值（整数）；1||0，人脸识别成功/失败
-  "message": "错误提示", // 当status为0时返回错误信息
-  "face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
+	"status": 1, //状态值（整数）；1||0，人脸识别成功/失败
+	"message": "错误提示", // 当status为0时返回错误信息
+	"face": "base64人脸图片" // base64人脸图片，自动截取人脸头像的jpg图片
 }
 ```
