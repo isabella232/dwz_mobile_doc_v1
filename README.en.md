@@ -9,10 +9,12 @@
 
 > ## Demo 演示
 
-- 在线演示版，使用 chrome 开发模式设置手机版 `http://mobile.jui.org`
-- 安卓测试版 `http://mobile.jui.org/apk/dwz_mobile_app.apk`
-- 苹果测试版，由于 Dome 演示这类 App 在苹果应用商店审核过不去，开发者可以自行下载源码后使用 apicloud [云编译 iOS 版](/doc/apicloud/package?id=云编译)
+- 在线演示版，使用 chrome 开发模式设置手机版 `http://mobile.jui.org`，或者手机`在线演示码`
 - 视频演示 `http://mobile.jui.org/video/dwz_mobile.mp4`
+
+|                  在线演示码                   |                   APP 安装码                    |
+| :-------------------------------------------: | :---------------------------------------------: |
+| ![](./_media/readme/app_online.png?width=200) | ![](./_media/readme/app_download.png?width=200) |
 
 > ## 效果展示
 
