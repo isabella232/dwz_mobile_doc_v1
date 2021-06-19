@@ -2,7 +2,7 @@
 
 # **概述**
 
-<a href="https://dwzteam.github.io/dwz_mobile_doc_v1/#/doc/apicloud/dwzBaiduFaceLive/doc" target="_blank"><b>点击查看官方文档</b></a>
+<a href="https://dwzteam.github.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBaiduFaceLive/doc" target="_blank"><b>点击查看官方文档</b></a>
 
 - 封装了新版百度开放平台的人脸识别采集 SDK
   - 包含活体动作 `faceLiveness()`

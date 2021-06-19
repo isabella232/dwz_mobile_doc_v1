@@ -1,6 +1,6 @@
-# dwzBaiduFaceLive 人脸识别
+# DWZ 百度人脸识别模块
 
-DWZ 百度人脸识别模块【apicloud】
+dwzBaiduFaceLive 百度人脸识别模块【apicloud】
 
 > ## 功能介绍
 

@@ -1,10 +1,10 @@
-# dwz-BytedanceImageX 火山引擎图片加载
+# DWZ 火山引擎图片加载插件
 
-DWZ 字节跳动火山引擎图片加载 SDK 插件【dcloud】
+dwz-BytedanceImageX 字节跳动火山引擎图片加载 SDK 插件【dcloud】
 
 > ## 功能介绍
 
-- https://ext.dcloud.net.cn/plugin?id=4794
+- [uni 原生插件市场中查看](https://ext.dcloud.net.cn/plugin?id=5397)
 - 本插件是会对字节跳动火山引擎图片加载 SDK 的封装：
   - 支持现代图片格式 heic、heif、webp、heif、avif 在 HTML5 混合 App 中展示
   - 支持用户感知失败率、解码失败率、解码耗时、超分成功率、超分耗时、排队耗时、加载耗时、文件大小等指标打点上报
@@ -17,7 +17,6 @@ DWZ 字节跳动火山引擎图片加载 SDK 插件【dcloud】
 
 - 本插件针对一个 APP **一次购买永久使用**
 - 跨平台支持（Android & iOS）iOS 端与 Android 端 JS 接口保持一致
-- 接口支持 debug 参数设置，方便排查 字节跳动火山引擎数据上报配制相关问题
 
 - **插件使用含技术支持，远程协助调试插件请加微信沟通**
 
