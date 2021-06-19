@@ -26,9 +26,9 @@ dwz-BytedanceImageX 字节跳动火山引擎图片加载 SDK 插件【dcloud】
 
 > ## 使用攻略
 
-1. 使用之前须从火山引擎开放平台申请开发者账号并完成企业认证，获取 aid。[字节跳动火山引擎开发平台控制台](https://console.volcengine.com/imagex/overview/)
-2. 对接火山引擎服务器端图片上传 SDK
-3. 服务端和 App 数据交互接口，图片 url 使用火山引擎的图片 url
+1. 使用之前须从火山引擎开放平台申请开发者账号并完成企业认证。[字节跳动火山引擎开发平台控制台](https://console.volcengine.com/imagex/overview/)
+2. aid 就是 appid，通过[火山引擎应用管理](https://console.volcengine.com/baf/)创建即可
+3. 对接火山引擎服务器端图片上传 SDK，服务端和 App 数据交互接口，图片 url 使用火山引擎的图片 url
 4. App 获取火山引擎 heic 图片 url
 5. 前端代码调用 dwz-BytedanceImageX 插件，把 heic 等格式转化成 jpeg 格式
 
