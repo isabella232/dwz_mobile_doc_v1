@@ -37,6 +37,7 @@
 - dcloud 插件
 
   - [dwz-BaiduFaceLive 人脸识别](doc/dcloud/dwzBaiduFaceLive/doc.md)
+  - [dwz-BytedanceImageX 图片加载](doc/dcloud/dwzBytedanceImageX/doc.md)
 
 - 打包发布
 
