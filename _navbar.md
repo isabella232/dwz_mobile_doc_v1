@@ -32,6 +32,7 @@
 - apicloud 模块
 
   - [dwzBaiduFaceLive 人脸识别](doc/apicloud/dwzBaiduFaceLive/doc.md)
+  - [dwz-BytedanceImageX 图片加载](doc/apicloud/dwzBytedanceImageX/doc.md)
   - [apicloud 第三方原生模块示例](doc/apicloud/OtherModule.md)
 
 - dcloud 插件
