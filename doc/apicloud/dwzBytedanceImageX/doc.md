@@ -32,10 +32,11 @@ dwzBytedanceImageX 字节跳动火山引擎图片加载 SDK 插件【apicloud】
 5. APICloud 模块市场搜索 dwzBytedanceImageX，增加到 APICloud 工程中
 6. 使用此模块之前先配置 config.xml 文件，配置完毕后，需通过云端编译生效，配置方法如下：
 
-````xml
+```xml
 <feature name="dwzBytedanceImageX">
     <param name="aid" value="123456"/><!--对应字节跳动火山引擎appid-->
 </feature>
+```
 
 > 图片转化接口 convertImg
 
@@ -52,7 +53,7 @@ module.convertImg(
 		console.log(ret);
 	}
 );
-````
+```
 
 > 回调 callback(ret)
 
@@ -70,7 +71,7 @@ ret：
 
 > ## 示例代码
 
-本示例基于 DWZ Mobile
+本示例基于 DWZ Mobile，其它前端框架思路也是把 heic 这类图片使用 dwzBytedanceImageX 模块转换成 jpeg 格式的 base64 字符串，最后更新 img 标签的 src 属性。
 
 ```html
 <main>
