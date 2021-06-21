@@ -22,7 +22,7 @@
 | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/app_download.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
 
-为帮助用户更好更快的使用插件，点击查看 <a href="https://dwzteam.github.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBytedanceImageX/doc" target="_blank"><b>dwz-BaiduFaceLive 插件详细对接文档</b></a>，包含示例代码、知识点讲解、注意事项等，供您参考。
+为帮助用户更好更快的使用插件，点击查看 <a href="https://dwzteam.github.io/dwz_mobile_doc_v1/#/doc/dcloud/dwzBytedanceImageX/doc" target="_blank"><b>dwz-BytedanceImageX 插件详细对接文档</b></a>，包含示例代码、知识点讲解、注意事项等，供您参考。
 
 # **对接步骤**
 
