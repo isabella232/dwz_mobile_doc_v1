@@ -1,35 +1,33 @@
-# DWZ 火山引擎图片加载插件
+﻿/**
+Title: dwzBytedanceImageX
+Description: dwzBytedanceImageX
+**/
 
-dwzBytedanceImageX 字节跳动火山引擎图片加载 SDK 插件【apicloud】
+<p style="color: #ccc; margin-bottom: 30px;">来自于：DWZ Mobile<a style="background-color: #95ba20; color:#fff; padding:4px 8px;border-radius:5px;margin-left:30px; margin-bottom:0px; font-size:12px;text-decoration:none;" target="_blank" href="//www.apicloud.com/mod_detail/dwzBytedanceImageX">立即使用</a></p>
 
-> ## 功能介绍
+<div class="outline">
 
-- [uni 原生插件市场中查看](https://www.apicloud.com/mod_detail/dwzBytedanceImageX)
-- 本插件是针对字节跳动火山引擎图片加载 SDK 的封装：
-  - 支持现代图片格式 heic、heif、webp、heif、avif 在 HTML5 混合 App 中展示
-  - 支持用户感知失败率、解码失败率、解码耗时、超分成功率、超分耗时、排队耗时、加载耗时、文件大小等指标打点上报
-- 本插件适用的业务场景：uniapp 开发安卓和 iOS 应用时，如果有大量的图片加载和展示，比如电商产品图片展示、电子相册等场景
-- 为什么要使用 dwz-BytedanceImageX
+[convertImg](#a1)
 
-  - 先看一个测评：[高效的图像处理云服务-ImageX](https://blog.csdn.net/weixin_44643524/article/details/112550247)
-  - 新款的 iPhone 和一部分新出的安卓手机拍照生成的图片采用新的图片格式 heic，清楚度和分辨率相同的一张 heic 图片，比 jpeg 格式小 7~8 倍，比 png 格式小 20 倍以上，所以如果服务器和 app 之间图片传输如果使用 heic 格式可以至少减少 7 倍流量，可以大大提高图片加载速度
-  - 由于 HTML5 img 标签是不能识别 heic 图片，需要使用火山引擎图片加载 SDK 对 heic 图片解码转化成 jpeg 格式
+</div>
 
-- 跨平台支持（Android & iOS）iOS 端与 Android 端 JS 接口保持一致
+# **模块示例**
 
-- **插件使用含技术支持，远程协助调试插件请加微信沟通**
+为帮助用户更好更快的使用模块，维护了一个[示例](https://community.apicloud.com/bbs/forum.php?mod=viewthread&tid=190147)，示例中包含示例代码、知识点讲解、注意事项等，供您参考。
 
-|                    安卓 APK 测试包                     |                   技术服务微信                   |
-| :----------------------------------------------------: | :----------------------------------------------: |
-| ![](../../../_media/readme/app_download.png?width=200) | ![](../../../_media/readme/wx_zhh.png?width=200) |
+[git 示例](https://gitee.com/dwzteam/dwz_mobile_app)
 
-> ## 效果展示
+|                                      安卓 APK 测试包                                      |                                    技术服务微信                                     |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/app_download.png?width=200) | ![](https://dwzteam.github.io/dwz_mobile_doc_v1/_media/readme/wx_zhh.png?width=200) |
 
-![](../../../_media/apicloud/dwzBytedanceImageX/1.jpg?height=360)
-![](../../../_media/apicloud/dwzBytedanceImageX/2.jpg?height=360)
-![](../../../_media/apicloud/dwzBytedanceImageX/3.jpg?height=360)
+# **概述**
 
-> ## 使用攻略
+**dwzBaiduFaceLive 模块概述**
+
+本模块封装了字节跳动火山引擎图片加载 SDK，支持 heic、heif、webp、avif 格式转化为 jpeg 格式的 base64 字符串，返回给前端 js。
+
+**模块使用攻略**
 
 1. 使用之前须从火山引擎开放平台申请开发者账号并完成企业认证。[字节跳动火山引擎开发平台控制台](https://console.volcengine.com/imagex/overview/)
 2. aid 就是 appid，通过[火山引擎应用管理](https://console.volcengine.com/baf/)创建即可
@@ -44,9 +42,11 @@ dwzBytedanceImageX 字节跳动火山引擎图片加载 SDK 插件【apicloud】
 </feature>
 ```
 
-> 图片转化接口 convertImg
+<div id="a1"></div>
 
-heic、heif、webp、avif 格式转化为 jpeg 格式的 base64 字符串，返回给前端 js
+# **convertImg**
+
+图片转化接口 convertImg：heic、heif、webp、avif 格式转化为 jpeg 格式的 base64 字符串，返回给前端 js
 
 ```js
 const module = api.require('dwzBytedanceImageX');
@@ -61,7 +61,7 @@ module.convertImg(
 );
 ```
 
-> 回调 callback(ret)
+## callback(ret)
 
 ret：
 
@@ -74,7 +74,7 @@ ret：
 }
 ```
 
-> ## 示例代码
+## 示例代码
 
 示例基于 DWZ Mobile，其它前端框架思路也是把 heic 这类图片使用 dwzBytedanceImageX 模块转换成 jpeg 格式的 base64 字符串，最后更新 img 标签的 src 属性。
 
@@ -149,3 +149,9 @@ biz.dwzBytedanceImageX = {
 	}
 };
 ```
+
+## 可用性
+
+iOS 系统（后续提供），Android 系统
+
+可提供的 1.0.0 及更高版本

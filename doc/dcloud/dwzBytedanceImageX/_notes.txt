@@ -1,5 +1,3 @@
 # dwz-BytedanceImageX v0.0.1
 
-百度人脸离线采集SDK升级到最新4.1版本
-
 heic、heif、webp、heif、avif 转换 jpeg 格式
