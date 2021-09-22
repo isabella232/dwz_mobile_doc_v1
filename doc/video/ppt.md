@@ -38,15 +38,21 @@
   <source src="https://yunli-cdn.oss-cn-beijing.aliyuncs.com/demo/video/sz-icbc-bank.mp4" type="video/mp4">
   </video>
 
+## 大屏可视化案例
+
+- [禁毒大屏](http://dev.jui.org/datav/dwz_datav_drug/)
+- [临平宗教局大屏](https://z.yi.ge/datav/datav_temple/)
+- [数字沙盘](https://yunli-cdn.innodev.com.cn/app/alpha/index.html?token=Yewk7xFTOE2HXxFG1Y6ZxltR-M8JdK7AW2HJJu_QY-j5Pe1vqWSd1zIDerJSbYAQu92DPx9UiPRQz4p0Rksj4I4XLYzTx-IfN4yx1_s_WKY)
+
 ## 大屏可视化图表
 
 > ### echarts 图表适配
->
-> 常见大屏可视化图表可以直接 echarts 图表，但是大屏的分辨率各类太多需要对图表大小特别是文字字号大小做适配。
+
+常见大屏可视化图表可以直接 echarts 图表，但是大屏的分辨率各类太多需要对图表大小特别是文字字号大小做适配。
 
 > ### 自定义图表
->
-> 一部份特殊的图表 echarts 中没有，所以根据特定展示需要，封装了自定义图表
+
+一部份特殊的图表 echarts 中没有，所以根据特定展示需要，封装了自定义图表
 
 > 环形图表(点击播放)
 

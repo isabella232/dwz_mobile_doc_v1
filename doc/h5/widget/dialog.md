@@ -9,21 +9,17 @@
 > ## 基础用法
 
 ```html
-<a
-  target="dialog"
-  data-href="tpl/widget/dialog/dialog1.html"
-  data-pop="fullscreen"
-  >关于</a
->
+<a target="dialog" data-href="tpl/widget/dialog/dialog1.html" data-pop="fullscreen">关于</a>
 
 <a
-  onclick="$.dialog.open({
+	onclick="$.dialog.open({
         url:'tpl/helper/dialogPic.html?dwz_callback=biz.pageRender',
         data:{info: 'Web 3D效果展示', src: 'image/pic/3d_1.jpg'},
         pop:'pic'
     })"
-  >导航</a
 >
+	导航
+</a>
 ```
 
 > ## 组件 js 接口
@@ -41,30 +37,30 @@
 
 ```js
 // 全屏模式dialog
-$.dialog.open({ url: "tpl/widget/dialog/dialog1.html", pop: "fullscreen" });
+$.dialog.open({ url: 'tpl/widget/dialog/dialog1.html', pop: 'fullscreen' });
 
 // 打开外部页面
 $.dialog.open({
-  url: "https://gitee.com/dwzteam/dwz_mobile_app",
-  pop: "fullscreen",
-  external: true,
-  page_title: "dialog外部页面",
+	url: 'https://gitee.com/dwzteam/dwz_mobile_app',
+	pop: 'fullscreen',
+	external: true,
+	page_title: 'dialog外部页面'
 });
 
 // pop模式dialog【小窗口展示】
-$.dialog.open({ url: "tpl/widget/dialog/dialog2.html", pop: "pop" });
+$.dialog.open({ url: 'tpl/widget/dialog/dialog2.html', pop: 'pop' });
 
 // pic模式dialog【查看大图】
 $.dialog.open({
-  url: "tpl/helper/dialogPic.html?dwz_callback=biz.pageRender",
-  data: { info: "Web 3D效果展示", src: "image/pic/3d_1.jpg" },
-  pop: "pic",
+	url: 'tpl/helper/dialogPic.html?dwz_callback=biz.pageRender',
+	data: { info: 'Web 3D效果展示', src: 'image/pic/3d_1.jpg' },
+	pop: 'pic'
 });
 
 // actionSheet模式【选择省、市、区】
 $.dialog.open({
-  url: "tpl/helper/signPop.html?dwz_callback=$.drawingBoardRender",
-  pop: "actionSheet",
+	url: 'tpl/helper/signPop.html?dwz_callback=$.drawingBoardRender',
+	pop: 'actionSheet'
 });
 ```
 
@@ -75,5 +71,5 @@ $.dialog.open({
 $.dialog.close();
 
 // 确认关闭dialog
-$.dialog.close({ closeMsg: "确认关闭弹出框吗?" });
+$.dialog.close({ closeMsg: '确认关闭弹出框吗?' });
 ```

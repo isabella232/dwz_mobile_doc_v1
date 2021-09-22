@@ -1,0 +1,29 @@
+[
+	{
+		"cond": ["DL==600 || DL==800", "V>=1 && V<=2.5", "Count3D({Base:['OK','=='], LDD:[3000,'>=']})"],
+		"result": {
+			"OP": { "val": 800, "type": "input", "disabled": false, "readonly": false, "hide": false },
+			"OPH": { "val": 2100, "type": "input", "disabled": false, "readonly": false, "hide": false },
+			"R": { "fn": "SumDoor({FNH:[200, '>']})", "disabled": false, "readonly": false, "hide": false }
+		},
+		"resultType": "set"
+	},
+	{
+		"cond": ["DL==ZZ || DL>=BB", "V>=1 && V<=2.5", "Count3D({Base:['OK','=='], LDD:[3000,'>=']})"],
+		"result": {
+			"OP": { "val": [800, 900, 1000], "type": "select", "disabled": false, "readonly": false, "hide": false },
+			"OPH": { "val": 2100, "type": "input", "disabled": false, "readonly": false, "hide": false },
+			"R": { "fn": "SumDoor({FNH:[200, '>']})", "disabled": false, "readonly": false, "hide": false }
+		},
+		"resultType": "cal"
+	},
+	{
+		"cond": [],
+		"result": {
+			"OP": { "val": [800, 900, 1000], "type": "select", "disabled": false, "readonly": false, "hide": false },
+			"OPH": { "val": 2100, "type": "input", "disabled": false, "readonly": false, "hide": false },
+			"R": { "fn": "SumDoor({FNH:[200, '>']})", "disabled": false, "readonly": false, "hide": false }
+		},
+		"resultType": "fn"
+	}
+]
