@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  php-apache-dev:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile-php-dev # 开发环境暂时不使用Dockerfile
+    container_name: php-apache-dev
+    # image: php:7.3-apache
+    image: jkdev/php:7.2-apache
+    volumes:
+      - ./php:/var/www/html # 宿主目录:容器目录
+      - ./php-apache-dev/vhosts.conf:/etc/apache2/sites-enabled/000-default.conf # apache 配制文件
+      - ./php-apache-dev/php.ini:/usr/local/etc/php/php.ini # apache 配制文件
+    ports:
+      - 1080:80 # 宿主端口:容器端口
+

@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  php-live:
+    build: .
+    image: gcslaoli/docker-php
+    ports:
+      - 80:80 # 宿主机端口:容器端口

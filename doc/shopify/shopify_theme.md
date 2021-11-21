@@ -15,7 +15,9 @@ brew install shopify-cli
 3. 使用 Shopify CLI 进行身份验证
 
 ```bash
-shopify login --store 7788sc.myshopify.com
+# shopify login --store 7788sc.myshopify.com
+shopify login --store dwzteam.myshopify.com
+# shopify login --store fitville-shoes.myshopify.com # 合作者没有权限 shopify theme serve，必须是staff members
 ```
 
 > 显示您当前连接到的商店
@@ -27,7 +29,7 @@ shopify store
 > 无需注销并重新登录即可在商店之间切换
 
 ```bash
-shopify switch --store 7788sc.myshopify.com
+shopify switch --store dwzteam.myshopify.com
 ```
 
 4. 下载商户主题码
@@ -87,6 +89,12 @@ Shopify.Checkout.OrderStatus.addContent('内容');
 > ## Shopify GitHub 集成
 
 https://shopify.dev/themes/tools/github/getting-started
+
+- shopfiy 自动生成的文件（styles.scss, app.js），提交 github 和 shopfiy theme serve 冲突
+
+> ## Shopify 插件
+
+- [安装 Reviews Tab 插件](https://support.judge.me/support/solutions/articles/44002237471-how-to-add-judge-me-widgets-using-shopify-s-theme-editor#Step-2%3A-Enable-the-App-Embed)
 
 > ## shopify 参考资料
 
