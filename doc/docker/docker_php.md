@@ -26,7 +26,7 @@ services:
 
 > ## 启动开发环境
 
-```sh
+```bash
 cd ~/wrokspace
 docker-compose -f "docker-compose-dev.yml" up -d --build
 
@@ -90,7 +90,7 @@ output_buffering=4096
 - linux 系统 ifconfig 查看虚拟网卡 docker0 的 IP，直接使用这个 IP 连接宿主机 mysql
 - macos 系统配制一块静态网卡（bridge0 应该是 macos 系统，docker 在运行时就建立了虚拟网卡，但是没有 IP）
 
-```sh
+```bash
 sudo ifconfig en0 alias 192.168.32.1/24 up # en0 增加IP
 sudo ifconfig en0 -alias 192.168.32.1 # en0 删除IP
 ```
@@ -103,19 +103,19 @@ http://localhost:1080
 
 > ## 关闭开发环境
 
-```sh
+```bash
 docker-compose -f "docker-compose-dev.yml" down
 ```
 
 > ## 启动生产环境
 
-```sh
+```bash
 docker-compose -f "docker-compose.yml" up -d --build
 ```
 
 > ## 关闭生产环境
 
-```sh
+```bash
 docker-compose -f "docker-compose.yml" down
 ```
 
@@ -123,20 +123,20 @@ docker-compose -f "docker-compose.yml" down
 
 ### 删除容器
 
-```sh
+```bash
 docker stop php-apache-dev
 docker rm php-apache-dev
 ```
 
 ### 查看镜像
 
-```sh
+```bash
 docker images
 docker ps
 ```
 
 ### 执行 docker 容器命令
 
-```sh
+```bash
 docker exec php-apache-dev ls /var/www/html
 ```
