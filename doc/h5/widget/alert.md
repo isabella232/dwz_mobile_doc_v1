@@ -8,41 +8,41 @@
 > ## toast 提示
 
 ```js
-$.alert.toast("alert组件示例 toast");
+$.alert.toast('alert组件示例 toast');
 ```
 
 > ## 成功提示
 
 ```js
-$.alert.success("alert组件示例 success");
+$.alert.success('alert组件示例 success');
 ```
 
 > ## 错误提示
 
 ```js
-$.alert.error("alert组件示例 error");
+$.alert.error('alert组件示例 error');
 ```
 
 > ## 自定义提示
 
 ```js
 $.alert.open({
-  msg: "DWZ Mobile alert组件示例，基础提示",
+	msg: 'DWZ Mobile alert组件示例，基础提示'
 });
 
 $.alert.open({
-  title: "自定义标题",
-  msg: "DWZ Mobile alert组件示例，自定义标题",
+	title: '自定义标题',
+	msg: 'DWZ Mobile alert组件示例，自定义标题'
 });
 
 $.alert.open(
-  {
-    title: "自定义标题",
-    msg: "DWZ Mobile alert组件示例，自定义标题 + 点击回调",
-  },
-  function (ret) {
-    $.alert.toast("buttonIndex: " + ret.buttonIndex);
-  }
+	{
+		title: '自定义标题',
+		msg: 'DWZ Mobile alert组件示例，自定义标题 + 点击回调'
+	},
+	function (ret) {
+		$.alert.toast('buttonIndex: ' + ret.buttonIndex);
+	}
 );
 ```
 
@@ -50,32 +50,32 @@ $.alert.open(
 
 ```js
 $.alert.confirm(
-  {
-    msg: "确认要删除吗？",
-  },
-  function (ret) {
-    $.alert.toast("buttonIndex: " + ret.buttonIndex);
-  }
+	{
+		msg: '确认要删除吗？'
+	},
+	function (ret) {
+		$.alert.toast('buttonIndex: ' + ret.buttonIndex);
+	}
 );
 
 // 确认提示 + 自定义标题和按钮
 $.alert.confirm(
-  {
-    title: "操作确认",
-    msg: "这个3个按钮的确认提醒",
-    buttons: ["是", "否", "取消"],
-  },
-  function (ret) {
-    $.alert.toast("buttonIndex: " + ret.buttonIndex);
-  }
+	{
+		title: '操作确认',
+		msg: '这个3个按钮的确认提醒',
+		buttons: ['是', '否', '取消']
+	},
+	function (ret) {
+		$.alert.toast('buttonIndex: ' + ret.buttonIndex);
+	}
 );
 ```
 
 > ## prompt 提示
 
 ```js
-$.alert.prompt("tpl/widget/alert/prompt.html?dwz_callback=biz.pageRender", {
-  form_url: biz.server.getUrl(biz.server.changePwd),
+$.alert.prompt('tpl/widget/alert/prompt.html?dwz_callback=biz.pageRender', {
+	form_url: biz.server.getUrl(biz.server.changePwd)
 });
 ```
 
@@ -86,5 +86,5 @@ $.alert.prompt("tpl/widget/alert/prompt.html?dwz_callback=biz.pageRender", {
 $.alert.close();
 
 // 关闭prompt 提示
-$.alert.close("prompt");
+$.alert.close('prompt');
 ```

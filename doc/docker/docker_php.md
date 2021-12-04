@@ -77,11 +77,8 @@ docker exec php-apache-dev apache2ctl restart
 
 ### php.ini 配制
 
-验证码图片乱码问题修改 /usr/local/etc/php/php.ini
-
-```conf
-output_buffering=4096
-```
+- 验证码图片乱码问题修改 php.ini 修改 `output_buffering=4096`
+- PHP7 $\_POST 取不到值 php.ini 修改 `always_populate_raw_post_data=On`
 
 ### Docker 容器内连接宿主机的 Mysql
 
@@ -139,4 +136,5 @@ docker ps
 
 ```bash
 docker exec php-apache-dev ls /var/www/html
+docker exec php-apache-dev apache2ctl restart
 ```
